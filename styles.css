@@ -10,13 +10,7 @@ body{
 	margin: 0%;
 	transition: all .8s ease;
 }
-.home{
-	text-align: left;
-}
-.home img{
-	margin: 15px;
-	width: 40px;
-}
+
 #page_1{
     background-position: center;
     width: 100vw;
@@ -235,3 +229,32 @@ model-viewer {
 	border: none;
 	cursor: pointer;
   }
+
+  .container {
+	display: grid;
+	grid-template-columns: 60% 50%;
+	grid-template-rows: 10% 90%;
+  }
+  .container .item1 {
+	grid-column-start: 1;
+  	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+  }
+  .container .item2 {
+	grid-column-start: 2;
+  	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+  }
+  .container .home{
+	text-align: left;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.container .home img{
+	margin: 15px;
+	width: 40px;
+}

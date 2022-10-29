@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SODA</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="image/1x/logo.png" type="image/icon type">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+	<div id="preloader"><div class="lds-facebook"><div></div><div></div><div></div></div></div>
+<div id="page_1">
+	<div class="logo_home">
+		<img src="image/1x/logo.png" alt="logo">
+		<p>salon of death <br>architecture</p>
+		
+	</div>
+		<div class="door_home" >
+			<button onclick="change_home()" class="hover-link"  cursor-type="button">
+				<span>
+					<img src="image/ff.png" alt="logo">
+				</span>
+			</button>
+		</div> 
+		
+	<div class="text_1">
+		<p>click the door to enter</p>
+	</div>
+</div>
+<div>
+	<button onclick="skip_all()" id="skip"><img src="image/skip.png" alt=""> </button>
+	<button id="page_2" onclick="change_line1()">
+	<div >
+		<div class="text_1">
+			<p class="hover-link"  cursor-type="button">
+			click anywhere to continue<br> click <img src="image/skip.png" alt=""> to skip.</p>
+		</div>
+
+	</div></button>
+
+	<button id="page_3" onclick="change_line2()">
+		<div >
+			<div class="text_1">
+				<p class="hover-link"  cursor-type="button">
+					เมื่อสิ่งที่ปรากฏให้เห็นอยู่ตรงหน้าจะมีตัวมันเป็นหลักฐานการคงอยู่
+				</p>
+			</div>
+		
+		</div></button>
+
+		<button id="page_4" onclick="change_line3()">
+			<div >
+				<div class="text_1">
+					<p class="hover-link"  cursor-type="button">
+						แล้วสิ่งที่ถูกทำลายไปแล้วจะหลงเหลืออะไร <br>...
+					</p>
+				</div>
+			
+			</div></button>
+</div>
+<div id="cursor"></div>
+
+
+<script>
+	let cursor = document.getElementById("cursor");
+	const onMouseMove = (event) => {
+	  cursor.style.left = event.pageX + "px";
+	  cursor.style.top = event.pageY + "px";
+
+	  if (event.target.hasAttribute("cursor-type")) {
+		let cursorSize = event.target.getAttribute("cursor-type");
+		cursor.classList.add(cursorSize);
+	  } else {
+		cursor.classList = "";
+	  }
+	};
+
+	document.addEventListener("mousemove", onMouseMove);
+
+	var loader = document.getElementById("preloader");
+	
+	window.addEventListener("load", function(){
+		setTimeout(function(){
+			loader.classList.add("preloader-hidden")	
+		}, 2500)
+		
+	})
+
+	const page_1 = document.getElementById("page_1")
+	function change_home(){
+
+		page_1.classList.add("preloader-hidden")
+	}
+
+	const page_2 = document.getElementById("page_2")
+	function change_line1(){
+
+		page_2.classList.add("preloader-hidden")
+	}
+
+	const page_3 = document.getElementById("page_3")
+	function change_line2(){
+
+		page_3.classList.add("preloader-hidden")
+	}
+
+	const page_4 = document.getElementById("page_4")
+	function change_line3(){
+		page_4.classList.add("preloader-hidden")
+		window.location.href ="home.html"
+	}
+
+	const skip = document.getElementById("skip")
+	function skip_all(){
+		page_2.classList.add("preloader-hidden")
+		page_3.classList.add("preloader-hidden")
+		
+		window.location.href ="home.html"
+	}
+  </script>
+</body>
+</html>

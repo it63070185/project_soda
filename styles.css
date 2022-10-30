@@ -281,3 +281,51 @@ model-viewer {
 	background: orange;
 	padding: 2em;
 }
+/*home_model*/
+#home .cube-1 {
+	position: absolute;
+  	width: 10em;
+  	height: 25em;
+  	background: red;
+  	border: 1px solid red;
+  	text-align: center;
+  	line-height: 2em;
+	transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(50deg) rotateZ(0deg) translate3d(10em, 3em, 1em) skew(0deg, 0deg);
+  }
+  #home .cube-2 {
+	position: absolute;
+  	width: 9em;
+  	height: 16em;
+  	background: blue;
+  	border: 1px solid red;
+  	text-align: center;
+  	line-height: 2em;
+	transform: scale3d(1, 1, 1) rotateX(100deg) rotateY(0deg) rotateZ(35deg) translate3d(2em, -13em, -7em) skew(0deg, 0deg);
+  }
+  #home .cube-3 {
+	position: absolute;
+  	width: 9em;
+  	height: 20em;
+  	background: yellow;
+  	border: 1px solid red;
+  	text-align: center;
+  	line-height: 2em;
+	transform: scale3d(1, 1, 1) rotateX(100deg) rotateY(0deg) rotateZ(35deg) translate3d(6em, -10em, -11em) skew(0deg, 0deg);
+  }
+  #home .cube-4 {
+	position: absolute;
+  	width: 20em;
+  	height: 12em;
+  	background: pink;
+  	border: 1px solid red;
+  	text-align: center;
+  	line-height: 2em;
+	  transform: scale3d(1, 1, 1) rotateX(100deg) rotateY(0deg) rotateZ(35deg) translate3d(11em, -11em, -15em) skew(0deg, 0deg);
+	
+}
+#home .cube-wrap {
+	transform: scale3d(0.8, 0.8, 0.8) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	transform-style: preserve-3d;
+	perspective: 600px;
+	perspective-origin: 50% 50%;
+  }

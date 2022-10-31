@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ex1 {
+  perspective: 1000px;
+  transform:scale3d(1,1,1) ;
+
+}
+
+.ex2 {
+  perspective: 150px;
+
+}
+
+.cube {
+  font-size: 4em;
+  width: 2em;
+  margin: 1.5em auto;
+  transform-style: preserve-3d;
+  transform: rotateX(2deg) rotateY(340deg);
+
+}
+
+.side {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.side1 {
+  position: absolute;
+  width: 3em;
+  height: 5em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.side2 {
+  position: absolute;
+  width: 6.5em;
+  height: 3em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.floor {
+  position: absolute;
+  width: 2em;
+  height: 20em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.pic {
+  position: absolute;
+  width: 1.5em;
+  height: 1.6em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+.pic2 {
+	position: absolute;
+	width: 2em;
+	height: 1.4em;
+	background: rgba(100,100,100,0.5);
+	border: 1px solid red;
+	text-align: center;
+}
+.pic3{
+	position: absolute;
+	width: 2.5em;
+	height: 2.2em;
+	background: rgba(100,100,100,0.5);
+	border: 1px solid red;
+	text-align: center;
+}
+.pic4{
+	position: absolute;
+	width: 1em;
+	height: 2em;
+	background: rgba(100,100,100,0.5);
+	border: 1px solid red;
+	text-align: center;
+}
+.pic5 {
+	position: absolute;
+	width: 3em;
+	height: 1.5em;
+	background: rgba(100,100,100,0.5);
+	border: 1px solid red;
+	text-align: center;
+}
+.pic6{
+	position: absolute;
+	width: 3em;
+	height: 2em;
+	background: rgba(100,100,100,0.5);
+	border: 1px solid red;
+	text-align: center;
+}
+.door_side{
+	position: absolute;
+	width: 1.5em;
+	height: 2.5em;
+	background: rgba(100,100,100,0.5);
+	border: 1px solid red;
+	text-align: center;
+	line-height: 2em;
+}
+.human_side{
+	position: absolute;
+	width: 0.6em;
+	height: 2em;
+	background: rgba(100,100,100,0.5);
+	border: 1px solid red;
+	text-align: center;
+	line-height: 2em;
+}
+.front {transform: translateZ(1em);}
+.door {transform: translateZ(-10em) translateX(1.7em) translateY(.5em);}
+.human {transform: translateZ(0em) translateX(1.7em) translateY(.9em);}
+.top {transform: rotateX(90deg) translateZ(1em);}
+.right {transform: rotateY(90deg) translateZ(1em);}
+.left_pic {transform: rotateY(90deg) translateZ(-0.2em) translateY(1em) translateX(-9em);}
+.left_pic2 {transform: rotateY(90deg) translateZ(-0.4em) translateY(1.1em) translateX(-6.8em);}
+.left_pic3 {transform: rotateY(90deg) translateZ(-0.66em) translateY(0.8em) translateX(-4em);}
+.left_pic4 {transform: rotateY(90deg) translateZ(0.1em) translateY(0.9em) translateX(-1.7em);}
+.left_pic5 {transform: rotateY(90deg) translateZ(-0.9em) translateY(1.1em) translateX(1.2em);}
+.left_pic6 {transform: rotateY(90deg) translateZ(-0.9em) translateY(0.9em) translateX(5em);}
+
+.bottom_floor {transform: rotateX(-90deg) translateZ(-7em) translateY(0em) translateX(1.5em);}
+.ceiling {transform: rotateX(-90deg) translateZ(-7em) translateY(0em) translateX(1.5em) translateZ(-3em);}
+
+.back {transform: rotateY(-180deg) translateZ(1em);}
+</style>
+</head>
+<body>
+
+<h1>The perspective Property</h1>
+
+<h2>perspective: 800px:</h2>
+<div class="ex1">
+  <div class="cube">
+  <div class="pic left_pic"><img src="https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.15752-9/308394246_1149868555919582_8110595750983281970_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFmnCtu6_kY-2XV-tJPLSaeJsAOhuJYpVgmwA6G4lilWNtpkUYCWtwy78L3qgpV-tRfdfQosWl8dbf0JeC9waPm&_nc_ohc=RvxIhlVEbtYAX9oNz_g&_nc_ht=scontent.fbkk8-2.fna&oh=03_AdS4kvalYhs2fKpXyuolsLyQ6mOiNyxNRMVF_iq4rcxPrA&oe=6385D809" alt="build" width="100%" height="100%"></div>
+  <div class="pic2 left_pic2">Pic_2</div>
+  <div class="pic3 left_pic3">Pic_3</div>
+  <div class="pic4 left_pic4">Pic_4</div>
+  <div class="pic5 left_pic5">Pic_5</div>
+  <div class="pic6 left_pic6">Pic_6</div>
+  <div class="door_side door">Door</div>
+  <div class="human_side human">H</div>
+  <div class="floor bottom_floor">Floor</div>
+  <div class="floor ceiling">ceiling</div>
+  </div>
+</div>
+
+
+</body>
+</html>

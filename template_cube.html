@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ex1 {
+  perspective: 1000px;
+  transform:scale3d(1,1,1) ;
+
+}
+
+.ex2 {
+  perspective: 150px;
+
+}
+
+.cube {
+  font-size: 4em;
+  width: 2em;
+  margin: 1.5em auto;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(-30deg);
+
+}
+
+.side {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+.side1 {
+  position: absolute;
+  width: 3em;
+  height: 5em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+.side2 {
+  position: absolute;
+  width: 6.5em;
+  height: 3em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+.side3 {
+  position: absolute;
+  width: 2em;
+  height: 5em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+.side4 {
+  position: absolute;
+  width: 3em;
+  height: 5.5em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+.side5 {
+  position: absolute;
+  width: 3em;
+  height: 3.5em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+.side6 {
+  position: absolute;
+  width: 1.5em;
+  height: 4.5em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+.side7 {
+  position: absolute;
+  width: 3em;
+  height: 1.5em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+  line-height: 2em;
+}
+
+.front {transform: translateZ(1em);}
+.top {transform: rotateX(90deg) translateZ(1em);}
+.right {transform: rotateY(90deg) translateZ(1em);}
+.left {transform: rotateY(-90deg) translateZ(1.5em) translateY(-1.5em) translateX(0.5em);}
+.left2 {transform: rotateY(-90deg) translateZ(-2.5em) translateY(3em) translateX(5em);}
+
+.bottom1 {transform: rotateX(-90deg) translateZ(-1.5em) translateY(0.5em) translateX(-1.5em);}
+.bottom2 {transform: rotateX(-90deg) translateZ(1em) translateY(-0.5em) translateX(0em);}
+.bottom3 {transform: rotateX(-90deg) translateZ(0em) translateY(-1.5em) translateX(0em);}
+.bottom4 {transform: rotateX(-90deg) translateZ(3em) translateY(-4em) translateX(4em);}
+.bottom5 {transform: rotateX(-90deg) translateZ(2.5em) translateY(-4.5em) translateX(5.5em);}
+
+.back {transform: rotateY(-180deg) translateZ(1em);}
+</style>
+</head>
+<body>
+
+<h1>The perspective Property</h1>
+
+<h2>perspective: 800px:</h2>
+<div class="ex1">
+  <div class="cube">
+    <div class="side top">5</div>
+  <div class="side front"></div>
+  <div class="side back"></div>
+  <div class="side right"></div>
+  <div class="side4 left">4</div>
+  <div class="side7 left2">7</div>
+  <div class="side1 bottom1">1</div>
+  <div class="side2 bottom2">2</div>
+  <div class="side3 bottom3">3</div>
+  <div class="side5 bottom4">5</div>
+  <div class="side6 bottom5">6</div>
+  </div>
+</div>
+
+
+</body>
+</html>

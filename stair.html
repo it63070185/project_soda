@@ -1,0 +1,73 @@
+<style>
+  .stair-all {
+    perspective: 1000px;
+    transform:scale3d(0.3,0.3,0.3) ;
+  }
+  
+
+  
+  .stair {
+    font-size: 4em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg) rotateY(30deg);
+  }
+  
+  .stair .sideT_B {
+    position: absolute;
+    width: 1.5em;
+    height: 6em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+    line-height: 2em;
+  }
+  .stair .sideL_R {
+    position: absolute;
+    width: 6em;
+    height: 1em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+    line-height: 2em;
+  }
+  .stair .sideF_B {
+    position: absolute;
+    width: 1.5em;
+    height: 1em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+    line-height: 2em;
+  }
+  
+  .stair .front {transform: translateZ(3em) translateY(3em) translateX(0em);}
+  .stair .top {transform: rotateX(90deg) translateZ(0em) translateY(0em) translateX(0em);}
+  .stair .right {transform: rotateY(90deg) translateZ(-1.5em) translateY(3em) translateX(0em);}
+  .stair .left {transform: rotateY(-90deg) translateZ(3em) translateY(3em) translateX(0em);}
+  .stair .bottom {transform: rotateX(-90deg) translateZ(1em) translateY(0em) translateX(0em);}
+  .stair .back {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
+  </style>
+  </head>
+  <body>
+  
+  <h1>The perspective Property</h1>
+  
+  <h2>perspective: 800px:</h2>
+  <div class="stair-all">
+    <div class="stair">
+      <div class="sideT_B top">5</div> 
+      <div class="sideF_B front">1</div>
+      <div class="sideF_B back">6</div>
+      <div class="sideL_R right">4</div>
+      <div class="sideL_R left">3</div>
+    
+      <div class="sideT_B bottom">2</div>
+    </div>
+  </div>
+  
+
+  
+  </body>
+  </html>

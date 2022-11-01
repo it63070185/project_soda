@@ -4,7 +4,9 @@
   
   }
   
-  
+  #door2{
+    cursor:url('/image/go.png'),auto;
+  }
   .cube {
     font-size: 4em;
     width: 2em;

@@ -1,0 +1,126 @@
+.ex1 {
+    perspective: 1200px;
+    transform:scale3d(1.3,1.3,1.3) ;
+  
+  }
+  
+  .cur_pic{
+    cursor:url('/image/cursor_look.png'),auto;
+  }
+  .door_in{
+    cursor:url('/image/go.png'),auto;
+  }
+  .cube {
+    font-size: 4em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transition: 0.5s  ease;
+  }
+  
+  .side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: gray;
+    border: 1px solid white;
+    text-align: center;
+  }
+  .side1 {
+    position: absolute;
+    width: 3em;
+    height: 5em;
+    background: gray;
+    border: 1px solid white;
+    text-align: center;
+  }
+  .side2 {
+    position: absolute;
+    width: 6.5em;
+    height: 3em;
+    background: gray;
+    border: 1px solid white;
+    text-align: center;
+  }
+  .floor {
+    position: absolute;
+    width: 2em;
+    height: 20em;
+    background: gray;
+    border: 1px solid white;
+    text-align: center;
+  }
+  .pic {
+    position: absolute;
+    width: 1.5em;
+    height: 1.6em;
+    background: gray;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 2em;
+  }
+  .pic2 {
+      position: absolute;
+      width: 2em;
+      height: 1.4em;
+      background: gray;
+      border: 1px solid white;
+      text-align: center;
+  }
+  .pic3{
+      position: absolute;
+      width: 2.5em;
+      height: 2.2em;
+      background: gray;
+      border: 1px solid white;
+      text-align: center;
+  }
+  .pic4{
+      position: absolute;
+      width: 1em;
+      height: 2em;
+      background: gray;
+      border: 1px solid white;
+      text-align: center;
+  }
+  .pic5 {
+      position: absolute;
+      width: 3em;
+      height: 1.5em;
+      background: gray;
+      border: 1px solid white;
+      text-align: center;
+  }
+  .pic6{
+      position: absolute;
+      width: 3em;
+      height: 2em;
+      background: gray;
+      border: 1px solid white;
+      text-align: center;
+  }
+  .human_side{
+      position: absolute;
+      width: 0.6em;
+      height: 2em;
+
+      text-align: center;
+      line-height: 2em;
+      cursor: url('/image/cursor_speak.png'),auto;
+  }
+  .front {transform: translateZ(1em);}
+  .door {transform: translateZ(-9em) translateX(3.3em) translateY(1.4em) scale3d(2,2,2);}
+  .human {transform: translateZ(0em) translateX(2.5em) translateY(1em);}
+  .top {transform: rotateX(90deg) translateZ(1em);}
+  .right {transform: rotateY(90deg) translateZ(1em);}
+  .left_pic {transform: rotateY(90deg) translateZ(-0.2em) translateY(1em) translateX(-9em);}
+  .left_pic2 {transform: rotateY(90deg) translateZ(-0.4em) translateY(1.1em) translateX(-6.8em);}
+  .left_pic3 {transform: rotateY(90deg) translateZ(-0.66em) translateY(0.8em) translateX(-4em);}
+  .left_pic4 {transform: rotateY(90deg) translateZ(0.1em) translateY(0.9em) translateX(-1.7em);}
+  .left_pic5 {transform: rotateY(90deg) translateZ(-0.9em) translateY(1.1em) translateX(1.2em);}
+  .left_pic6 {transform: rotateY(90deg) translateZ(-0.9em) translateY(0.9em) translateX(5em);}
+  
+  .bottom_floor {transform: rotateX(-90deg) translateZ(-7em) translateY(0em) translateX(1.5em);}
+  .ceiling {transform: rotateX(-90deg) translateZ(-7em) translateY(0em) translateX(1.5em) translateZ(-3em);}
+  
+  .back {transform: rotateY(-180deg) translateZ(1em);}

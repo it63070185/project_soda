@@ -45,7 +45,7 @@
 			  <svg class="door2">viewBox="0 0 100 100" >
 				<path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
 				</path>
-				<path stroke="#606060" stroke-width="1" fill="#606060"
+				<path onclick="go_build2()" id="door2" stroke="#606060" stroke-width="1" fill="#606060"
 					d="M31.5 90 H31.5 V50 Q31.5 21.5, 50 21.5 Q68.5 21.5, 68.5 50 V68.5 90 68.5 89.5 H31 68.5 ">
 				</path>
 			  </svg>
@@ -192,7 +192,11 @@
 		
 	})
 
-
+	const door2 = document.getElementById("door2")
+	function go_build2(){
+		
+		window.location.href ="build2.html"
+	}
 
 
 	

@@ -12,7 +12,7 @@
     width: 2em;
     margin: 1.5em auto;
     transform-style: preserve-3d;
-    transform: rotateX(-10deg) rotateY(-45deg) rotateZ(0deg)
+    transform: rotateX(-10deg) rotateY(330deg) rotateZ(0deg)
     translateY(0.5em) translateX(-1em);
   
   }
@@ -243,3 +243,23 @@
    .left {transform: rotateY(-90deg) translateZ(3em) translateY(3em) translateX(0em);}
    .bottom {transform: rotateX(-90deg) translateZ(1em) translateY(0em) translateX(0em);}
    .back {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
+
+
+  .item2{
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+	  font-weight: normal;
+	  color: #fff;
+	  text-align: center;
+    cursor: url(/image/skip.png),auto;
+    background-color: black;
+  }
+  .area{
+    position: relative;
+  	top: 20%;
+  	left: 40%;
+  	transform: translate(-50%, -50%);
+  }
+
+  

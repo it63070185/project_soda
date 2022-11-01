@@ -303,15 +303,15 @@ model-viewer {
 }
 .img1{
 	position: absolute;
-	transform: translate3d(65em,12em,0em);
-	width: 30%;
+	transform: translate3d(55em,12em,0em);
+	width: 50%;
 	height: 100%;
 	z-index: 102;
 	cursor: url(/image/back\ or\ quit.png)32 32,auto;
 	opacity: 0;
 	visibility: hidden;
 }
-.text1{
+.intext1{
 	position: absolute;
 	transform: translate3d(30em,20em,0em);
 	font-size: 20px;

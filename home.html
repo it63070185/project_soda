@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="styles_home.css">
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-	<script src="https://cdn.babylonjs.com/babylon.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
@@ -160,8 +160,11 @@
 				</div>
 			  </div>
 		</div>
-		<div class="item2">	
-			dadas
+		<div class="item2" id="app" @click="count()">	
+			<div :class="area">{{area}} <br> {{area2}}
+			</div>
+			
+			
 		</div>
 	</div>
 </div>
@@ -198,7 +201,28 @@
 		window.location.href ="build2.html"
 	}
 
-
+	let vue = new Vue({
+		el:'#app',
+		data:{
+            area:'ขณะนี้คุณอยู่ที่ "Salon of Death Architecture" สถานที่ซึ่ง',
+			area2:'รวบรวมเรื่องราวของสถาปัตยกรรมอันสูญสิ้นลงแล้ว',
+			count:0
+		},
+		methods:{
+			count() {
+				this.count++;
+				if(count==1){
+					this.area='"เรายินดีเป็นอย่างยิ่งที่จะนำเสนอเศษเสี้ยวของประสบการณ์ในอดีต'
+					this.area2='ที่ได้หลงเหลือเอาไว้ในความทรงจำของผู้คนในปัจจุบัน"'
+				}else if(count==2){
+					this.area='"พาคุณไปพบกับเรื่องราวที่ยังถูกจดจำ แบ่งปันพูดคุย สัมผัสกับอดีต'
+					this.area2='นำไปสู่การเปิดประตูบานใหม่"'
+				}
+			}
+		}
+			
+		
+	})
 	
   </script>
 </body>

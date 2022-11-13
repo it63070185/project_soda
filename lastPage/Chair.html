@@ -3,7 +3,7 @@
 <head>
 <style>
 .ex1 {
-  perspective: 1500px;
+  perspective: 1000px;
   transform:scale3d(0.5,0.5,0.5) ;
 }
 
@@ -16,19 +16,19 @@
   width: 2em;
   margin: 1.5em auto;
   transform-style: preserve-3d;
-  transform: rotateX(2deg) rotateY(340deg);
+  transform: rotateX(2deg) rotateY(340deg) ;
 
 }
 
-.side {
+.backchair {
   position: absolute;
-  width: 2em;
+  width: 5em;
   height: 2em;
   background: rgba(100,100,100,0.5);
   border: 1px solid red;
   text-align: center;
 }
-.side1 {
+.backchair1 {
   position: absolute;
   width: 3em;
   height: 5em;
@@ -36,7 +36,7 @@
   border: 1px solid red;
   text-align: center;
 }
-.side2 {
+.backchair2 {
   position: absolute;
   width: 6.5em;
   height: 3em;
@@ -44,7 +44,39 @@
   border: 1px solid red;
   text-align: center;
 }
-.floor {
+.backchair3 {
+  position: absolute;
+  width: 6.5em;
+  height: 3em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.backchair4 {
+  position: absolute;
+  width: 6.5em;
+  height: 3em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.backchair5 {
+  position: absolute;
+  width: 6.5em;
+  height: 3em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.bottomchair {
+  position: absolute;
+  width: 5em;
+  height: 2em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.bottomchair1 {
   position: absolute;
   width: 2.8em;
   height: 3.2em;
@@ -52,112 +84,63 @@
   border: 1px solid red;
   text-align: center;
 }
-.floor1 {
-    position: absolute;
-    width: 2.8em;
+.bottomchair2 {
+  position: absolute;
+  width: 2.8em;
+  height: 3.2em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.bottomchair3 {
+  position: absolute;
+  width: 2.8em;
+  height: 3.2em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.bottomchair4 {
+  position: absolute;
+  width: 2.8em;
+  height: 3.2em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.bottomchair5 {
+  position: absolute;
+  width: 2.8em;
+  height: 3.2em;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  text-align: center;
+}
+.human_side{
+  position: absolute;
+    width: 2.5em;
     height: 4.5em;
     background: rgba(100,100,100,0.5);
     border: 1px solid red;
     text-align: center;
-}
-.longfloor {
-    position: absolute;
-    width: 1em;
-    height: 6em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
-    text-align: center;
-}
-.sky {
-    position: absolute;
-    width: 5em;
-    height: 3.5em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
-    text-align: center;
-}
-.sky2 {
-    position: absolute;
-    width: 5em;
-    height: 0.6em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
-    text-align: center;
-}
-.ceiling {
-  position: absolute;
-  width: 0.8em;
-  height: 2em;
-  background: rgba(100,100,100,0.5);
-  border: 1px solid red;
-  text-align: center;
-}
-.pic {
-  position: absolute;
-  width: 2em;
-  height: 3em;
-  background: rgba(100,100,100,0.5);
-  border: 1px solid red;
-  text-align: center;
-  line-height: 2em;
-}
-.pic2 {
-	position: absolute;
-	width: 4.5em;
-	height: 2.5em;
-	background: rgba(100,100,100,0.5);
-	border: 1px solid red;
-	text-align: center;
-}
-.pic3{
-	position: absolute;
-	width: 3.5em;
-	height: 2.2em;
-	background: rgba(100,100,100,0.5);
-	border: 1px solid red;
-	text-align: center;
-}
-.pic4{
-	position: absolute;
-	width: 5em;
-	height: 3em;
-	background: rgba(100,100,100,0.5);
-	border: 1px solid red;
-	text-align: center;
-}
-.door_side{
-	position: absolute;
-	width: 0.9em;
-	height: 1.8em;
-	background: rgba(100,100,100,0.5);
-	border: 1px solid red;
-	text-align: center;
-	line-height: 2em;
-}
-.human_side{
-	position: absolute;
-	width: 0.6em;
-	height: 1.5em;
-	background: rgba(100,100,100,0.5);
-	border: 1px solid red;
-	text-align: center;
-	line-height: 2em;
+    line-height: 2em;
 }
 .front {transform: translateZ(1em);}
-.door {transform: rotateY(0deg)translateZ(7em) translateX(3.2em) translateY(2.8em);}
-.human {transform: translateZ(0em) translateX(4em) translateY(3em) translateZ(6.4em);}
 .top {transform: rotateX(90deg) translateZ(1em);}
+.human {transform: translateZ(0em) translateX(3em) translateY(1.2em) translateZ(4.4em);}
+.perbackchair{transform: rotateY(80deg) rotateX(10deg) translateX(-4em) translateY(2em) translateZ(0em);}
+.perbackchair1{transform: ;}
+.perbackchair2{transform: ;}
+.perbackchair3{transform: ;}
+.perbackchair4{transform: ;}
+.perbackchair5{transform: ;}
+.perbottomchair{transform: rotateY(80deg) rotateX(90deg) translateX(-4em) translateY(2em) translateZ(-3em);}
+.perbottomchair1{transform: ;}
+.perbottomchair2{transform: ;}
+.perbottomchair3{transform: ;}
+.perbottomchair4{transform: ;}
+.perbottomchair5{transform: ;}
 .right {transform: rotateY(90deg) translateZ(1em);}
-.left_pic {transform:rotateY(90deg) translateZ(0.8em) translateY(1.6em) translateX(-7.4em);}
-.left_pic2 {transform: rotateY(90deg) translateZ(-4.4em) translateY(0em) translateX(-5.9em);}
-.left_pic3 {transform: rotateY(0deg) translateZ(3.7em) translateY(-1.15em) translateX(-1.8em);}
-.left_pic4 {transform: rotateY(0deg) translateZ(3.7em) translateY(1.4em) translateX(1.52em);}
-.bottom_floor {transform: rotateX(-90deg)  translateZ(1.1em) translateY(-8.36em) translateX(-1.9em);}
-.bottom_floor2 {transform:  rotateX(-90deg) translateZ(2.3em) translateY(-7.5em) translateX(3em);}
-.bottom_floor3 {transform: rotateX(-90deg) rotateZ(90deg) translateZ(1.48em) translateY(-2.4em) translateX(-3.7em);}
-.locceiling1 {transform: rotateX(-90deg) translateZ(-4.1em) translateY(-5.5em) translateX(0.5em) ;}
-.locceiling2 {transform: rotateX(0deg) translateZ(3.75em) translateY(-2.3em) translateX(0.5em);}
-.locceiling3 {transform: rotateY(90deg) translateZ(-2.5em) translateY(-2.2em) translateX(-9em);}
 .back {transform: rotateY(-180deg) translateZ(1em);}
 </style>
 </head>
@@ -168,18 +151,9 @@
 <h2>perspective: 1500px</h2>
 <div class="ex1">
   <div class="cube">
-  <div class="pic left_pic"><img src="" alt="build" width="100%" height="100%"></div>
-  <div class="pic2 left_pic2">Pic_2</div>
-  <div class="pic3 left_pic3">Pic_3</div>
-  <div class="pic4 left_pic4">Pic_4</div>
-  <div class="door_side door">Door</div>
-  <div class="human_side human">H</div>
-  <div class="floor bottom_floor">Floor</div>
-  <div class="floor1 bottom_floor2">Floor2</div>
-  <div class="longfloor bottom_floor3">Floor3</div>
-  <div class="sky locceiling1">sky</div>
-  <div class="sky2 locceiling2">sky2</div>
-  <div class="ceiling locceiling3">ceiling</div>
+    <div class="backchair perbackchair">back1</div>
+    <div class="bottomchair perbottomchair">bottom1</div>
+    <div class="human_side human"><img src="human.png" width="100%" height="100%"></div>
   </div>
 </div>
 

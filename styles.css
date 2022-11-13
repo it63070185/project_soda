@@ -301,24 +301,14 @@ model-viewer {
 	background: orange;
 	padding: 2em;
 }
-.img1{
-	position: absolute;
-	transform: translate3d(55em,12em,0em);
-	width: 50%;
-	height: 100%;
-	z-index: 102;
-	cursor: url(/image/back\ or\ quit.png)32 32,auto;
-	opacity: 0;
-	visibility: hidden;
-}
-.intext1{
-	position: absolute;
-	transform: translate3d(30em,20em,0em);
-	font-size: 20px;
-	width: 90%;
-	height: 90%;
-	z-index: 100;
-	cursor: url(/image/back\ or\ quit.png)32 32,auto;
-	opacity: 0;
-	visibility: hidden;
+.dor:hover{
+    transform: rotateY(25deg);
+    transform-origin: center left;
+    transition: 0.8s;
+    fill: blue;
+  }
+@media only screen and (max-width: 1024px){
+	.item2 {
+		display: none;
+	}
 }

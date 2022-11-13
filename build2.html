@@ -23,17 +23,17 @@
 		<div class="item1" id="view">	
 			<div class="ex1">
                 <div class="cube" v-bind:style="{ transform: move1 }">
-                <div onclick="pic1()" class="cur_pic pic left_pic"><img src="/image/buildtext2/hotel_1.png" alt="build" width="100%" height="100%"></div>
-                <div onclick="pic2()"  class="cur_pic pic2 left_pic2"></div>
-                <div onclick="pic3()"  class="cur_pic pic3 left_pic3"></div>
-                <div onclick="pic4()"  class="cur_pic pic4 left_pic4"></div>
-                <div onclick="pic5()"  class="cur_pic pic5 left_pic5"></div>
-                <div onclick="pic6()"  class="cur_pic pic6 left_pic6"></div>
+                <div onclick="pic1(1)" class="cur_pic pic left_pic"><img src="/image/buildtext2/hotel_1.png" alt="build" width="100%" height="100%"></div>
+                <div onclick="pic1(2)"  class="cur_pic pic2 left_pic2"><img src="/image/buildtext2/hotel_2.png" alt="build" width="100%" height="100%"></div>
+                <div onclick="pic1(3)"  class="cur_pic pic3 left_pic3"><img src="/image/buildtext2/hotel_4.png" alt="build" width="100%" height="100%"></div>
+                <div onclick="pic1(4)"  class="cur_pic pic4 left_pic4"><img src="/image/buildtext2/hotel_3.png" alt="build" width="100%" height="100%"></div>
+                <div onclick="pic1(5)"  class="cur_pic pic5 left_pic5"><img src="/image/buildtext2/hotel_5.png" alt="build" width="100%" height="100%"></div>
+                <div onclick="pic1(6)"  class="cur_pic pic6 left_pic6"><img src="/image/buildtext2/hotel_6.png" alt="build" width="100%" height="100%"></div>
                 
                 <div onclick="hum2()" class="human_side human"><img src="/image/human/1x/1.png" alt="human" width="100%" height="100%"></div>
                 <div class="floor bottom_floor"></div>
                 <div class="floor ceiling"></div>
-                <svg class="door">viewBox="0 0 100 100">
+                <svg class="door"> viewBox="0 0 100 100">
                     <path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
                     </path>
                     <path onclick="back()"class="door_in"stroke="#606060" stroke-width="1" fill="#606060"
@@ -43,17 +43,46 @@
                 </div>
               </div>
 		</div>
-        <div onclick="close_img()" class="img1"> <img src="/image/buildtext2/hotel_1.png" alt="img1" width="50%" height="50%"></div>
+			<div class="img1">
+				<button class="close_but" onclick="close_img(1)" type="button"><img src="/image/quit.png" alt="dd"></button>
+				<img src="/image/buildtext2/hotel_1.png" alt="img1" width="100%" height="100%">
+				<p>ระหว่างรื้อโรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+			</div>
+			<div class="img2">
+				<button class="close_but" onclick="close_img(2)" type="button"><img src="/image/quit.png" alt="dd"></button>
+				<img src="/image/buildtext2/hotel_2.png" alt="img1" width="100%" height="100%">
+				<p>โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+			</div>
+			<div class="img3">
+				<button class="close_but" onclick="close_img(3)" type="button"><img src="/image/quit.png" alt="dd"></button>
+				<img src="/image/buildtext2/hotel_4.png" alt="img1" width="100%" height="100%">
+				<p>โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+			</div>
+			<div class="img4">
+				<button class="close_but" onclick="close_img(4)" type="button"><img src="/image/quit.png" alt="dd"></button>
+				<img src="/image/buildtext2/hotel_3.png" alt="img1" width="100%" height="100%">
+				<p>โรงแรมสยามอินเตอร์คอนติเนนตัลและผู้มีส่วนร่วม </p>
+			</div>
+			<div class="img5">
+				<button class="close_but" onclick="close_img(5)" type="button"><img src="/image/quit.png" alt="dd"></button>
+				<img src="/image/buildtext2/hotel_5.png" alt="img1" width="100%" height="100%">
+				<p>ระหว่างรื้อถอน โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+			</div>
+			<div class="img6">
+				<button class="close_but" onclick="close_img(6)" type="button"><img src="/image/quit.png" alt="dd"></button>
+				<img src="/image/buildtext2/hotel_6.png" alt="img1" width="100%" height="100%">
+				<p>ระหว่างรื้อถอน โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+			</div>
         <div onclick="close_text()" class="intext1"> dadsdsaasdasdasdasdsddsdadadsd</div>
 		<div class="item2">
-			<div class="all_tabs">
+			<div  class="all_tabs">
 				<!-- ด้านล่างนี้ให้เปลี่ยนไปใช้ v-for -->
 				<div v-for="x in tabs">
 					<div class="tab_item" :active="x.id == active_tab" @click="changeTabs(x.id)">
 					</div>
 				</div>
 			</div>
-			<img :src="pic" alt="build" >
+			<img :src="pic" alt="build">
 		</div>
 	</div>
 </div>
@@ -123,36 +152,144 @@
 
     const item = document.querySelector(".item2")
     const img1 = document.querySelector(".img1")
+	const img2 = document.querySelector(".img2")
+	const img3 = document.querySelector(".img3")
+	const img4 = document.querySelector(".img4")
+	const img5 = document.querySelector(".img5")
+	const img6 = document.querySelector(".img6")
     const text1 = document.querySelector(".intext1")
     const hum = document.querySelector(".human")
-	function pic1(){
-        item.classList.remove("preloader-hidden")
-        text1.classList.remove("preloader-show")
-        img1.classList.remove("preloader-show")
-        item.classList.remove("preloader-show")
-        text1.classList.remove("preloader-hidden")
-        img1.classList.remove("preloader-hidden")
-		item.classList.add("preloader-hidden")
-        img1.classList.add("preloader-show")
+	function pic1(a){
+		if(a==1){
+			text1.classList.remove("preloader-show")
+			img1.classList.remove("preloader-show")
+			img2.classList.remove("preloader-show")
+			img3.classList.remove("preloader-show")
+			img4.classList.remove("preloader-show")
+			img5.classList.remove("preloader-show")
+			img6.classList.remove("preloader-show")
+			item.classList.remove("preloader-show")
+			item.classList.add("preloader-hidden")
+			img1.classList.add("preloader-show")
+		}
+		else if(a==2){
+			text1.classList.remove("preloader-show")
+			img1.classList.remove("preloader-show")
+			img2.classList.remove("preloader-show")
+			img3.classList.remove("preloader-show")
+			img4.classList.remove("preloader-show")
+			img5.classList.remove("preloader-show")
+			img6.classList.remove("preloader-show")
+			item.classList.remove("preloader-show")
+			item.classList.add("preloader-hidden")
+			img2.classList.add("preloader-show")
+		}
+		else if(a==3){
+			text1.classList.remove("preloader-show")
+			img1.classList.remove("preloader-show")
+			img2.classList.remove("preloader-show")
+			img3.classList.remove("preloader-show")
+			img4.classList.remove("preloader-show")
+			img5.classList.remove("preloader-show")
+			img6.classList.remove("preloader-show")
+			item.classList.remove("preloader-show")
+			item.classList.add("preloader-hidden")
+			img3.classList.add("preloader-show")
+		}
+		else if(a==4){
+			text1.classList.remove("preloader-show")
+			img1.classList.remove("preloader-show")
+			img2.classList.remove("preloader-show")
+			img3.classList.remove("preloader-show")
+			img4.classList.remove("preloader-show")
+			img5.classList.remove("preloader-show")
+			img6.classList.remove("preloader-show")
+			item.classList.remove("preloader-show")
+			item.classList.add("preloader-hidden")
+			img4.classList.add("preloader-show")
+		}
+		else if(a==5){
+			text1.classList.remove("preloader-show")
+			img1.classList.remove("preloader-show")
+			img2.classList.remove("preloader-show")
+			img3.classList.remove("preloader-show")
+			img4.classList.remove("preloader-show")
+			img5.classList.remove("preloader-show")
+			img6.classList.remove("preloader-show")
+			item.classList.remove("preloader-show")
+			item.classList.add("preloader-hidden")
+			img5.classList.add("preloader-show")
+		}
+		else if(a==6){
+			text1.classList.remove("preloader-show")
+			img1.classList.remove("preloader-show")
+			img2.classList.remove("preloader-show")
+			img3.classList.remove("preloader-show")
+			img4.classList.remove("preloader-show")
+			img5.classList.remove("preloader-show")
+			img6.classList.remove("preloader-show")
+			item.classList.remove("preloader-show")
+			item.classList.add("preloader-hidden")
+			img6.classList.add("preloader-show")
+		}
 	}
-    function close_img(){
-        item.classList.remove("preloader-hidden")
-        img1.classList.remove("preloader-show")
-		img1.classList.add("preloader-hidden")
-        item.classList.add("preloader-show")
-        img1.classList.remove("preloader-hidden")
-        item.classList.remove("preloader-show")
+    function close_img(s){
+		if(s==1){
+			item.classList.remove("preloader-hidden")
+			img1.classList.remove("preloader-show")
+			img1.classList.add("preloader-hidden")
+			item.classList.add("preloader-show")
+		}
+		else if(s==2){
+			item.classList.remove("preloader-hidden")
+			img2.classList.remove("preloader-show")
+			img2.classList.add("preloader-hidden")
+			item.classList.add("preloader-show")
+		}
+		else if(s==3){
+			item.classList.remove("preloader-hidden")
+			img3.classList.remove("preloader-show")
+			img3.classList.add("preloader-hidden")
+			item.classList.add("preloader-show")
+		}
+		else if(s==4){
+			item.classList.remove("preloader-hidden")
+			img4.classList.remove("preloader-show")
+			img4.classList.add("preloader-hidden")
+			item.classList.add("preloader-show")
+		}
+		else if(s==5){
+			item.classList.remove("preloader-hidden")
+			img5.classList.remove("preloader-show")
+			img5.classList.add("preloader-hidden")
+			item.classList.add("preloader-show")
+		}
+		else if(s==6){
+			item.classList.remove("preloader-hidden")
+			img6.classList.remove("preloader-show")
+			img6.classList.add("preloader-hidden")
+			item.classList.add("preloader-show")
+		}
+        
 	}
     function hum2(){
         item.classList.remove("preloader-hidden")
-        text1.classList.remove("preloader-show")
         img1.classList.remove("preloader-show")
+		img2.classList.remove("preloader-show")
+		img3.classList.remove("preloader-show")
+		img4.classList.remove("preloader-show")
+		img5.classList.remove("preloader-show")
+		img6.classList.remove("preloader-show")
         item.classList.remove("preloader-show")
         text1.classList.remove("preloader-hidden")
-        img1.classList.remove("preloader-hidden")
 		item.classList.add("preloader-hidden")
         text1.classList.add("preloader-show")
         img1.classList.add("preloader-hidden")
+		img2.classList.add("preloader-hidden")
+		img3.classList.add("preloader-hidden")
+		img4.classList.add("preloader-hidden")
+		img5.classList.add("preloader-hidden")
+		img6.classList.add("preloader-hidden")
 	}
     function close_text(){
         item.classList.remove("preloader-hidden")

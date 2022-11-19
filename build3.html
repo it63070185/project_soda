@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="image/1x/logo.png" type="image/icon type">
 	<link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style_custom.css">
+    <link rel="stylesheet" href="styles_satorn.css">
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	<script src="https://cdn.babylonjs.com/babylon.js"></script>
@@ -23,17 +23,18 @@
 		<div class="item1" id="view">	
 			<div class="ex1" v-bind:style="{ transform: scale1 }">
                 <div class="cube" v-bind:style="{ transform: move1 }">
-					<div class="side1 back1">1</div>
-					<div class="side1 left1">1.1</div>
-					<div class="side2 back2">3</div>
-					<div class="side3 left3">4</div>
-					<div class="side4 bottom4">5</div>
-					<div class="side5 back3">6</div>
-					<div class="side6 left2">7</div>
-					<div class="side7 back4">8</div>
-					<div class="side8 top1">10</div>
-				
-					<div class="side2 back5">HM</div>
+					<div class="pic left_pic"><img src="" alt="build" width="100%" height="100%"></div>
+                    <div class="pic2 left_pic2">Pic_2</div>
+                    <div class="pic3 left_pic3">Pic_3</div>
+                    <div class="pic4 left_pic4">Pic_4</div>
+                    <div class="door_side door">Door</div>
+                    <div class="human_side human">H</div>
+                    <div class="floor bottom_floor">Floor</div>
+                    <div class="floor1 bottom_floor2">Floor2</div>
+                    <div class="longfloor bottom_floor3">Floor3</div>
+                    <div class="sky locceiling1">sky</div>
+                    <div class="sky2 locceiling2">sky2</div>
+                    <div class="ceiling locceiling3">ceiling</div>
 				
                 </div>
               </div>
@@ -115,8 +116,8 @@
 		data:{
 			active_tab:0,
 			pic:`/image/buildtext2/1.png`,
-			scale1:"transform:scale3d(2,2,2) translateX(1em)",
-            move1:"rotateX(0deg) rotateY(311deg) rotateZ(0deg) translateY(-1em) translateX(2.5em) translateZ(0em)",
+			scale1:"transform:scale3d(0.8,0.8,0.8) translateX(1em)",
+            move1:"rotateX(2deg) rotateY(306deg) rotateZ(360deg) translateY(1em) translateX(4.5em) translateZ(-2em)",
 			tabs:[
 			{
 				id:0,
@@ -134,8 +135,8 @@
 				this.active_tab = x;
 				if(x == 0){
 					this.pic = `/image/buildtext2/1.png`;
-					this.scale1 = "transform:scale3d(2,2,2) translateX(1em)"
-                    this.move1 ="rotateX(0deg) rotateY(311deg) rotateZ(0deg) translateY(-1em) translateX(2.5em) translateZ(0em)"
+					this.scale1 = "transform:scale3d(0.8,0.8,0.8) translateX(1em)"
+                    this.move1 ="rotateX(2deg) rotateY(306deg) rotateZ(360deg) translateY(1em) translateX(4.5em) translateZ(-2em)"
 				}else if(x == 1){
 					this.pic = `/image/buildtext2/2.png`;
 					this.scale1 = "transform:scale3d(2,2,2) translateX(1em)"

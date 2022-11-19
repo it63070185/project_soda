@@ -1,0 +1,327 @@
+.ex1 {
+    perspective: 1500px;
+    transform:scale3d(0.8,0.8,0.8) ;
+  
+  }
+  
+  .ex2 {
+    perspective: 150px;
+  
+  }
+  
+  .cube {
+    font-size: 4em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(2deg) rotateY(306deg) rotateZ(360deg) translateY(1em) translateX(4.5em) translateZ(-2em);
+  
+  }
+  
+  .side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+  }
+  .side1 {
+    position: absolute;
+    width: 3em;
+    height: 5em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+  }
+  .side2 {
+    position: absolute;
+    width: 6.5em;
+    height: 3em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+  }
+  .floor {
+    position: absolute;
+    width: 2.8em;
+    height: 3.2em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+  }
+  .floor1 {
+      position: absolute;
+      width: 2.8em;
+      height: 4.5em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+  }
+  .longfloor {
+      position: absolute;
+      width: 1em;
+      height: 6em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+  }
+  .sky {
+      position: absolute;
+      width: 5em;
+      height: 3.5em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+  }
+  .sky2 {
+      position: absolute;
+      width: 5em;
+      height: 0.6em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+  }
+  .ceiling {
+    position: absolute;
+    width: 0.8em;
+    height: 2em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+  }
+  .pic {
+    position: absolute;
+    width: 2em;
+    height: 3em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid red;
+    text-align: center;
+    line-height: 2em;
+  }
+  .pic2 {
+      position: absolute;
+      width: 4.5em;
+      height: 2.5em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+  }
+  .pic3{
+      position: absolute;
+      width: 3.5em;
+      height: 2.2em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+  }
+  .pic4{
+      position: absolute;
+      width: 5em;
+      height: 3em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+  }
+  .door_side{
+      position: absolute;
+      width: 0.9em;
+      height: 1.8em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+      line-height: 2em;
+  }
+  .human_side{
+      position: absolute;
+      width: 0.6em;
+      height: 1.5em;
+      background: rgba(100,100,100,0.5);
+      border: 1px solid red;
+      text-align: center;
+      line-height: 2em;
+  }
+  .front {transform: translateZ(1em);}
+  .door {transform: rotateY(0deg)translateZ(7em) translateX(3.2em) translateY(2.8em);}
+  .human {transform: translateZ(0em) translateX(4em) translateY(3em) translateZ(6.4em);}
+  .top {transform: rotateX(90deg) translateZ(1em);}
+  .right {transform: rotateY(90deg) translateZ(1em);}
+  .left_pic {transform:rotateY(90deg) translateZ(0.8em) translateY(1.6em) translateX(-7.4em);}
+  .left_pic2 {transform: rotateY(90deg) translateZ(-4.4em) translateY(0em) translateX(-5.9em);}
+  .left_pic3 {transform: rotateY(0deg) translateZ(3.7em) translateY(-1.15em) translateX(-1.8em);}
+  .left_pic4 {transform: rotateY(0deg) translateZ(3.7em) translateY(1.4em) translateX(1.52em);}
+  .bottom_floor {transform: rotateX(-90deg)  translateZ(1.1em) translateY(-8.36em) translateX(-1.9em);}
+  .bottom_floor2 {transform:  rotateX(-90deg) translateZ(2.3em) translateY(-7.5em) translateX(3em);}
+  .bottom_floor3 {transform: rotateX(-90deg) rotateZ(90deg) translateZ(1.48em) translateY(-2.4em) translateX(-3.7em);}
+  .locceiling1 {transform: rotateX(-90deg) translateZ(-4.1em) translateY(-5.5em) translateX(0.5em) ;}
+  .locceiling2 {transform: rotateX(0deg) translateZ(3.75em) translateY(-2.3em) translateX(0.5em);}
+  .locceiling3 {transform: rotateY(90deg) translateZ(-2.5em) translateY(-2.2em) translateX(-9em);}
+  .back {transform: rotateY(-180deg) translateZ(1em);}
+
+  .door_in:hover{
+    transform: rotateY(25deg);
+    transform-origin: center left;
+    transition: 0.8s;
+    fill: blue;
+  }
+  .img1{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 400px;
+    height: 300px;
+    z-index: 102;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .img2{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 400px;
+    height: 300px;
+    z-index: 102;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .img3{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 400px;
+    height: 300px;
+    z-index: 102;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .img4{
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    width: 300px;
+    height: 400px;
+    z-index: 102;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .img5{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 400px;
+    height: 300px;
+    z-index: 102;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .img6{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 400px;
+    height: 300px;
+    z-index: 102;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .close_but{
+    position: absolute;
+    top: -11%;
+    left: 90%;
+   
+  }
+  .intext1{
+    position: absolute;
+    transform: translate3d(30em,20em,0em);
+    font-size: 20px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/back\ or\ quit.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  @media only screen and (max-width: 1024px){
+    .ex1 {
+      perspective: 1200px;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale3d(0.5,0.5,0.5);
+      position: absolute;
+    
+    }
+    .img1{
+      position: absolute;
+      width: 600px;
+      height: 500px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img3{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img4{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 600px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img5{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img6{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .close_but{
+      position: absolute;
+      top: -11%;
+      left: 95%;
+     
+    }
+  }
+

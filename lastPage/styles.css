@@ -42,7 +42,7 @@ body{
     width: 100vw;
     height: 100vh;
 	margin: 0%;
-    background: rgb(0,0,0);
+    background: rgb(200, 200, 200);
 	color: #fff;
     position: fixed;
 	transition: all .8s ease;
@@ -54,7 +54,7 @@ body{
     width: 100vw;
     height: 100vh;
 	margin: 0%;
-    background: rgb(0,0,0);
+    background: rgb(200, 200, 200);
 	color: #fff;
     position: fixed;
 	transition: all .8s ease;
@@ -474,16 +474,3 @@ model-viewer {
 .left1 {transform: rotateY(-90deg) translateZ(0.2em) translateY(-2em) translateX(-1.3em);}
 .bottom1 {transform:rotateX(-90deg) translateZ(-0.25em) translateX(0em) translateY(1.25em);}
 .back1 {transform: rotateY(-180deg) translateZ(1.5em) translateY(-2em);}
-
-#page_3{
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    margin: 0%;
-    background: rgb(200, 200, 200);
-    color: #fff;
-    position: fixed;
-    transition: all .8s ease;
-    z-index: 2;
-    text-align: center;
-}

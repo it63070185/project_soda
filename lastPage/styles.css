@@ -324,10 +324,11 @@ model-viewer {
 }
 
 .theBlock{
-	/* position: absolute; */
+	position: absolute;
 	width: 50%;
 	height: 50%;
-	transform: translate(50%, 0%);
+	transform: translate(110%, -50%);
+	z-index: 200;
 }
 /*chair*/
 .ex1 {
@@ -337,7 +338,7 @@ model-viewer {
 
 .cube {
   width: 100%;
-  margin: 10em auto;
+  margin: 8em auto;
   transform-style: preserve-3d;
   transform: rotateX(343deg) rotateY(63deg);
 }

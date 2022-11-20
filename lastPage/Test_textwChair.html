@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>Document</title>
+    <style>
+        .ex1 {
+          perspective: 1000px;
+          transform:scale3d(1,1,1) ;
+        }
+        
+        .cube {
+          font-size: 4em;
+          width: 2em;
+          margin: 1.5em auto;
+          transform-style: preserve-3d;
+          transform: rotateX(343deg) rotateY(63deg);
+        }
+        
+        .side {
+          position: absolute;
+          width: 4em;
+          height: 1.5em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .side1 {
+          position: absolute;
+          width: 4em;
+          height: 1.5em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .side2 {
+          position: absolute;
+          width: 2em;
+          height: 1.5em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .side3 {
+          position: absolute;
+          width: 2em;
+          height: 1.5em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .side4 {
+          position: absolute;
+          width: 4em;
+          height: 2em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .side5 {
+          position: absolute;
+          width: 4em;
+          height: 2em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .tside {
+          position: absolute;
+          width: 4em;
+          height: 2em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .tside1 {
+          position: absolute;
+          width: 4em;
+          height: 2em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .tside2 {
+          position: absolute;
+          width: 0.5em;
+          height: 2em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .tside3 {
+          position: absolute;
+          width: 0.5em;
+          height: 2em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .tside4 {
+          position: absolute;
+          width: 4em;
+          height: 0.5em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .tside5 {
+          position: absolute;
+          width: 4em;
+            height: 0.5em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        .human_side{
+          position: absolute;
+          width: 2.5em;
+          height: 4.5em;
+          background: rgba(100,100,100,0.5);
+          border: 1px solid red;
+          text-align: center;
+          line-height: 2em;
+        }
+        
+        .human {transform: rotateY(-90deg) translateY(-2.8em) translateX(0.6em);}
+        .front {transform: translateZ(1em);}
+        .top {transform: rotateX(90deg) translateZ(1em);}
+        .right {transform: rotateY(90deg) translateZ(3em);}
+        .left {transform: rotateY(-90deg) translateZ(1em);}
+        .bottom {transform: rotateX(-90deg) translateZ(0.5em);}
+        .back {transform: rotateY(-180deg) translateZ(1em);}
+        .front1 {transform: translateZ(-1em) translateY(-2em);}
+        .top1 {transform: rotateX(90deg) translateZ(2.29em) translateY(-1.1em) translateX(-0.23em);}
+        .right1 {transform: rotateY(90deg) translateZ(3.752em) translateY(-2em) translateX(1.23em);}
+        .left1 {transform: rotateY(-90deg) translateZ(0.2em) translateY(-2em) translateX(-1.3em);}
+        .bottom1 {transform:rotateX(-90deg) translateZ(-0.25em) translateX(0em) translateY(1.25em);}
+        .back1 {transform: rotateY(-180deg) translateZ(1.5em) translateY(-2em);}
+        </style> 
+</head>
+<body>
+    <div>
+        <button onclick="skip_all()" id="skip"><img src="image/skip.png" alt=""> </button>
+        <button id="page_2" onclick="change_line1()">
+                <div class="text_1">
+                    <p class="hover-link"  cursor-type="button">
+                    click anywhere to continue<br> click <img src="image/skip.png" alt=""> to skip.</p>
+                    <div class="theBlock">
+                    </div>
+                </div>
+                <div class="ex1">
+                    <div class="cube">
+                    <div class="side front">1</div>
+                    <div class="side1 back">6</div>
+                    <div class="side2 right">4</div>
+                    <div class="side3 left">3</div>
+                    <div class="side4 top">5</div>
+                    <div class="side5 bottom">2</div>
+                    <div class="tside front1">t1</div>
+                    <div class="tside1 back1">t6</div>
+                    <div class="tside2 right1">t4</div>
+                    <div class="tside3 left1">t3</div>
+                    <div class="tside4 top1">t5</div>
+                    <div class="tside5 bottom1">t2</div>
+                    <div class="human_side human"><img src="human.png" width="100%" height="100%"></div>
+                    </div>
+                  </div>
+                <div>
+            </div>
+        </button>
+        <button id="page_3" onclick="change_line2()">
+            <div>
+                <div class="text_1">
+                    <p class="hover-link"  cursor-type="button">
+                        You didn't Skip?
+                    </p>
+                    <div class="theBlock">
+                        <div class="ex1">
+                            <div class="cube">
+                            <div class="side front">1</div>
+                            <div class="side1 back">6</div>
+                            <div class="side2 right">4</div>
+                            <div class="side3 left">3</div>
+                            <div class="side4 top">5</div>
+                            <div class="side5 bottom">2</div>
+                            <div class="tside front1">t1</div>
+                            <div class="tside1 back1">t6</div>
+                            <div class="tside2 right1">t4</div>
+                            <div class="tside3 left1">t3</div>
+                            <div class="tside4 top1">t5</div>
+                            <div class="tside5 bottom1">t2</div>
+                            <div class="human_side human"><img src="human.png" width="100%" height="100%"></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div>
+            </div>
+        </button>
+        <button id="page_4" onclick="change_line3()">
+            <div>
+                <div class="text_1">
+                    <p class="hover-link"  cursor-type="button">
+                    Let Play Apex!
+                    </p>
+                    <div class="theBlock">
+                        <div class="ex1">
+                            <div class="cube">
+                            <div class="side front">1</div>
+                            <div class="side1 back">6</div>
+                            <div class="side2 right">4</div>
+                            <div class="side3 left">3</div>
+                            <div class="side4 top">5</div>
+                            <div class="side5 bottom">2</div>
+                            <div class="tside front1">t1</div>
+                            <div class="tside1 back1">t6</div>
+                            <div class="tside2 right1">t4</div>
+                            <div class="tside3 left1">t3</div>
+                            <div class="tside4 top1">t5</div>
+                            <div class="tside5 bottom1">t2</div>
+                            <div class="human_side human"><img src="human.png" width="100%" height="100%"></div>
+                            </div>
+                          </div>
+                        <div>
+                    </div>
+                </div>
+            </div>
+        </button>
+    </div>
+    <div id="cursor"></div>
+</body>
+<script>
+	let cursor = document.getElementById("cursor");
+	const onMouseMove = (event) => {
+	  cursor.style.left = event.pageX + "px";
+	  cursor.style.top = event.pageY + "px";
+
+	  if (event.target.hasAttribute("cursor-type")) {
+		let cursorSize = event.target.getAttribute("cursor-type");
+		cursor.classList.add(cursorSize);
+	  } else {
+		cursor.classList = "";
+	  }
+	};
+
+	document.addEventListener("mousemove", onMouseMove);
+	const page_2 = document.getElementById("page_2")
+	function change_line1(){
+		page_2.classList.add("preloader-hidden")
+	}
+
+	const page_3 = document.getElementById("page_3")
+	function change_line2(){
+		page_3.classList.add("preloader-hidden")
+	}
+
+	const page_4 = document.getElementById("page_4")
+	function change_line3(){
+		page_4.classList.add("preloader-hidden")
+		window.location.href ="index.html"
+	}
+
+	const skip = document.getElementById("skip")
+	function skip_all(){
+		page_2.classList.add("preloader-hidden")
+		page_3.classList.add("preloader-hidden")
+		
+		window.location.href ="index.html"
+	}
+  </script>
+</html>

@@ -327,7 +327,7 @@ model-viewer {
 	position: absolute;
 	width: 50%;
 	height: 50%;
-	transform: translate(110%, -50%);
+	transform: translate(50%, -50%);
 	z-index: 200;
 }
 /*chair*/
@@ -338,9 +338,9 @@ model-viewer {
 
 .cube {
   width: 100%;
-  margin: 8em auto;
+  margin: 20em auto;
   transform-style: preserve-3d;
-  transform: rotateX(343deg) rotateY(63deg);
+  transform: rotateX(360deg) rotateY(60deg) translate(50%, -50%);
 }
 
 .side {

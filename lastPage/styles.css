@@ -61,6 +61,18 @@ body{
 	z-index: 1;
 	text-align: center;
 }
+#page_5{
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+	margin: 0%;
+    background: rgb(200, 200, 200);
+	color: #fff;
+    position: fixed;
+	transition: all .8s ease;
+	z-index: 1;
+	text-align: center;
+}
 #skip{
 	position: fixed;
 	top: 95%;
@@ -88,7 +100,7 @@ model-viewer {
 #skip img {
 	width: 2em;
 }
-#page_2 .text_1 ,#page_3 .text_1 ,#page_4 .text_1{
+#page_2 .text_1 ,#page_3 .text_1 ,#page_4 .text_1, #page_5 .text_1{
 	font-size: 1.5em;
 	font-weight: normal;
 	color: #fff;

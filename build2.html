@@ -31,8 +31,8 @@
                 <div onclick="pic1(6)"  class="cur_pic pic6 left_pic6"><img src="/image/buildtext2/hotel_6.png" alt="build" width="100%" height="100%"></div>
                 
                 <div onclick="hum2()" class="human_side human"><img src="/image/human/1x/1.png" alt="human" width="100%" height="100%"></div>
-                <div class="floor bottom_floor"></div>
-                <div class="floor ceiling"></div>
+                <div class="floor bottom_floor"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
+                <div class="floor2 ceiling"></div>
                 <svg class="door"> viewBox="0 0 100 100">
                     <path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
                     </path>
@@ -73,7 +73,12 @@
 				<img src="/image/buildtext2/hotel_6.png" alt="img1" width="100%" height="100%">
 				<p>ระหว่างรื้อถอน โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
 			</div>
-        <div onclick="close_text()" class="intext1"> dadsdsaasdasdasdasdsddsdadadsd</div>
+        <div onclick="change_text1()" class="intext1"> ที่นั่นเขาว่ามันคือแลนมาร์คใหญ่ของสยามมาก่อน <br> ต่อให้ไม่เคยไปพักก็ต้องได้ยินชื่อนี้สักครั้ง.. อะไรนะ ไม่เคยหรือ?</div>
+		<div onclick="change_text2()" class="intext2"> อย่าทำให้ฉันดูแก่ได้ไหม?</div>
+		<div onclick="change_text3()" class="intext3"> ไม่ใช่แค่ห้องหับเท่านั้น แม้แต่สวนก็ยังสวยพร้อม <br>จะมีโรงแรมสักกี่ที่ล่ะที่มีนกยูงตัวเป็น ๆ มาให้ดูใจกลางเมือง</div>
+		<div onclick="change_text4()" class="intext4"> แต่ก่อนหากมองลงมาจาก BTS ก็เห็นจนชินตา <br>วิวกลางวันสีเขียวสบายตาดี ส่วนวิวกลางคืนก็สวยอย่าบอกใคร</div>
+		<div onclick="close_text()" class="intext5"> ก่อนที่โรงแรมจะปิดไปสร้างเป็นสยามพารากอน ก็เคยมีการจัดแสดงโขน <br> คนแสดงรำไปร้องไห้ไป ตอนนั้นฉันก็ดูไป ก็อดไม่ได้ที่จะร้องไห้ไปเหมือนพวกเขา :)
+		</div>
         <div class="item2 mob">
             <nav role="navigation">
                 <div id="menuToggle">
@@ -96,9 +101,7 @@
                             </div>
                         </div>
 						<img :src="pic" alt="build">
-						<div class="la_1">
-							{{ rawHtml }}
-                        </div>
+						
                     </ul>
                 </div>
             </nav>
@@ -117,7 +120,8 @@
                 </div>
             </div>
 			<img :src="pic" alt="build">
-            
+            <div class="la_1">
+			</div>
                 
 		</div>
 	</div>
@@ -157,7 +161,6 @@
 			active_tab:0,
 			pic:`/image/buildtext2/1.png`,
             move1:"rotateX(6deg) rotateY(235deg) rotateZ(0deg) translateY(1.5em) translateX(7.8em) translateZ(-10em)",
-			rawHtml:"dasdasdasd",
 			tabs:[
 			{
 				id:0,
@@ -176,15 +179,15 @@
 				if(x == 0){
 					this.pic = `/image/buildtext2/1.png`;
                     this.move1 ="rotateX(6deg) rotateY(235deg) rotateZ(0deg) translateY(1.5em) translateX(7.8em) translateZ(-10em)"
-					this.rawHtml="dasdasdasd"
+					
 				}else if(x == 1){
-					this.pic = `/image/buildtext2/2.png`;
+					this.pic = `/image/buildtext2/21.png`;
                     this.move1 ="rotateX(5deg) rotateY(320deg) rotateZ(0deg) translateY(1.5em) translateX(6.8em) translateZ(8em)"
-					this.rawHtml="komoiok"
+					
 				}else if(x == 2){
 					this.pic = `/image/buildtext2/3.png`;
-                    this.move1 ="rotateX(6deg) rotateY(340deg) rotateZ(0deg) translateY(1.5em) translateX(2.8em) translateZ(2em)"
-					this.rawHtml=""
+                    this.move1 ="rotateX(6deg) rotateY(340deg) rotateZ(0deg) translateY(1.8em) translateX(2.8em) translateZ(3em)"
+					
 				}
 			}
 		}
@@ -198,10 +201,18 @@
 	const img5 = document.querySelector(".img5")
 	const img6 = document.querySelector(".img6")
     const text1 = document.querySelector(".intext1")
+	const text2 = document.querySelector(".intext2")
+	const text3 = document.querySelector(".intext3")
+	const text4 = document.querySelector(".intext4")
+	const text5 = document.querySelector(".intext5")
     const hum = document.querySelector(".human")
 	function pic1(a){
 		if(a==1){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
@@ -214,6 +225,10 @@
 		}
 		else if(a==2){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
@@ -226,6 +241,10 @@
 		}
 		else if(a==3){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
@@ -238,6 +257,10 @@
 		}
 		else if(a==4){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
@@ -250,6 +273,10 @@
 		}
 		else if(a==5){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
@@ -262,6 +289,10 @@
 		}
 		else if(a==6){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
@@ -322,6 +353,10 @@
 		img6.classList.remove("preloader-show")
         item.classList.remove("preloader-show")
         text1.classList.remove("preloader-hidden")
+		text2.classList.remove("preloader-show")
+		text3.classList.remove("preloader-show")
+		text4.classList.remove("preloader-show")
+		text5.classList.remove("preloader-show")
 		item.classList.add("preloader-hidden")
         text1.classList.add("preloader-show")
         img1.classList.add("preloader-hidden")
@@ -331,12 +366,32 @@
 		img5.classList.add("preloader-hidden")
 		img6.classList.add("preloader-hidden")
 	}
+	function change_text1(){
+		text1.classList.remove("preloader-show")
+		text1.classList.add("preloader-hidden")
+		text2.classList.add("preloader-show")
+	}
+	function change_text2(){
+        text2.classList.remove("preloader-show")
+		text2.classList.add("preloader-hidden")
+		text3.classList.add("preloader-show")
+	}
+	function change_text3(){
+        text3.classList.remove("preloader-show")
+		text3.classList.add("preloader-hidden")
+		text4.classList.add("preloader-show")
+	}
+	function change_text4(){
+        text4.classList.remove("preloader-show")
+		text4.classList.add("preloader-hidden")
+		text5.classList.add("preloader-show")
+	}
     function close_text(){
         item.classList.remove("preloader-hidden")
-        text1.classList.remove("preloader-show")
-		text1.classList.add("preloader-hidden")
+        text5.classList.remove("preloader-show")
+		text5.classList.add("preloader-hidden")
         item.classList.add("preloader-show")
-        text1.classList.remove("preloader-hidden")
+        text5.classList.remove("preloader-hidden")
         item.classList.remove("preloader-show")
 	}
 

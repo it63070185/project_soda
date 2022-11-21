@@ -52,6 +52,15 @@
     border: 1px solid white;
     text-align: center;
   }
+  .floor2 {
+    position: absolute;
+    width: 2em;
+    height: 20em;
+    background: url(image/sky.jpg);
+    background-position: left bottom;
+    border: 1px solid white;
+    text-align: center;
+  }
   .pic {
     position: absolute;
     width: 1.5em;
@@ -214,17 +223,65 @@
    
   }
   .intext1{
-    position: absolute;
-    transform: translate3d(30em,20em,0em);
-    font-size: 20px;
+    position: relative;
+    font-size: 1em;
+    left: 55vw;
+    top: -380px;
     width: 90%;
     height: 90%;
     z-index: 100;
-    cursor: url(/image/back\ or\ quit.png)32 32,auto;
+    cursor: url(/image/talk1.png)32 32,auto;
     opacity: 0;
     visibility: hidden;
   }
-
+  .intext2{
+    position: relative;
+    font-size: 1em;
+    left: 1vw;
+    top: -380px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .intext3{
+    position: relative;
+    font-size: 1em;
+    left: 55vw;
+    top: -430px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .intext4{
+    position: relative;
+    font-size: 1em;
+    left: -1vw;
+    top: -430px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .intext5{
+    position: relative;
+    font-size: 1em;
+    left: 55vw;
+    top: -460px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
   @media only screen and (max-width: 1024px){
     .ex1 {
       perspective: 1200px;

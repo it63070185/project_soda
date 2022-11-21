@@ -243,6 +243,7 @@ model-viewer {
 	display: grid;
 	grid-template-columns: 60% 50%;
 	grid-template-rows: 10% 90%;
+	transition: all 0.5s ease;
   }
   .container .item1 {
 	grid-column-start: 1;
@@ -279,7 +280,7 @@ model-viewer {
 }
 .item2 img{
 	margin-top: 5%;
-	width: 420px;
+	width: 350px;
 	height: 75vh;
 	transition: 0.5s  ease;
 }
@@ -383,7 +384,7 @@ model-viewer {
 #menuToggle input:checked ~ span
 {
   opacity: 1;
-  transform: translateX(-565px ) translateY(270px );
+  transform: translateX(-600px ) translateY(310px );
   background: #fff;
 }
 
@@ -393,9 +394,9 @@ model-viewer {
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 480px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
+  padding: 0px;
   padding-top: 100px;
   
 
@@ -412,14 +413,14 @@ model-viewer {
 
 #menuToggle input:checked ~ ul
 {
-	transform: translate(-125%, 0);
+	transform: translate(-100%, 0);
 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 
 @media only screen and (max-width: 1024px){
 	.roll {
-		transform: rotate(90deg) translateY(12em);
+		transform: rotate(90deg) translateY(18em);
 		
 	}
 	.all_tabs{
@@ -511,14 +512,7 @@ model-viewer {
 	#menuToggle input:checked ~ span
 	{
 	opacity: 1;
-	transform: translateX(-340px ) translateY(250px );
+	transform: translateX(-350px ) translateY(250px );
 	background: #fff;
 	}
-}
-
-.la_1{
-	position: absolute;
-  top: 150px;
-  left: 60px;
-  color: #000;
 }

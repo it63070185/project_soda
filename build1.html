@@ -21,64 +21,125 @@
 			<img src="image/1x/logo.png" alt="logo">
 		</div>
 		<div class="item1" id="view">	
-			<div class="ex1" v-bind:style="{ transform: scale1 }">
+			<div class="ex1">
                 <div class="cube" v-bind:style="{ transform: move1 }">
-					<div class="side1 back1">1</div>
-					<div class="side1 left1">1.1</div>
-					<div class="side2 back2">3</div>
-					<div class="side3 left3">4</div>
-					<div class="side4 bottom4">5</div>
-					<div class="side5 back3">6</div>
-					<div class="side6 left2">7</div>
-					<div class="side7 back4">8</div>
-					<div class="side8 top1">10</div>
-				
-					<div class="side2 back5">HM</div>
-				
+					<div class="stair1">
+						<div class="sideT_B top"></div> 
+						<div class="sideF_B front"></div>
+						<div class="sideF_B back"></div>
+						<div class="sideL_R right"></div>
+						<div class="sideL_R left"></div>
+						<div class="sideT_B bottom"></div>
+					</div>
+					<div class="stair2">
+						<div class="sideT_B top"></div> 
+						<div class="sideF_B front"></div>
+						<div class="sideF_B back"></div>
+						<div class="sideL_R right"></div>
+						<div class="sideL_R left"></div>
+						<div class="sideT_B bottom"></div>
+					  </div>
+					<div onclick="pic1(1)" class="cur_pic side1 back1"><img src="/image/buildtext1/img_1.png" alt="build" width="100%" height="100%"></div>
+					<div onclick="pic1(2)" class="cur_pic side1 left1"><img src="/image/buildtext1/img_2.png" alt="build" width="100%" height="100%"></div>
+					<div onclick="pic1(3)" class="cur_pic side2 back2"><img src="/image/buildtext1/img_3.png" alt="build" width="100%" height="100%"></div>
+					<div onclick="pic1(4)" class="cur_pic side3 left3"><img src="/image/buildtext1/img_4.png" alt="build" width="100%" height="100%"></div>
+					<div class="side4 bottom4"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
+					<div onclick="pic1(5)" class="cur_pic side5 back3"><img src="/image/buildtext1/img_5.png" alt="build" width="100%" height="100%"></div>
+					<div onclick="pic1(6)" class="cur_pic side6 left2"><img src="/image/buildtext1/img_6.png" alt="build" width="100%" height="100%"></div>
+					<div onclick="pic1(7)" class="cur_pic side7 back4"><img src="/image/buildtext1/img_7.png" alt="build" width="100%" height="100%"></div>
+					<div class="side8 top1"><img src="/image/sky.jpg" alt="build" width="100%" height="100%"></div>
+					
+					  
+					<div onclick="hum2()" class="human_side back5"><img src="/image/human/1x/1.png" alt="human" width="100%" height="100%"></div>
+					
                 </div>
               </div>
 		</div>
 			<div class="img1">
 				<button class="close_but" onclick="close_img(1)" type="button"><img src="/image/quit.png" alt="dd"></button>
-				<img src="/image/buildtext2/hotel_1.png" alt="img1" width="100%" height="100%">
-				<p>ระหว่างรื้อโรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+				<img src="/image/buildtext1/img_1.png" alt="img1" width="100%" height="100%">
+				<p>บรรยากาศภายในโรงภาษีร้อยชักสาม</p>
 			</div>
 			<div class="img2">
 				<button class="close_but" onclick="close_img(2)" type="button"><img src="/image/quit.png" alt="dd"></button>
-				<img src="/image/buildtext2/hotel_2.png" alt="img1" width="100%" height="100%">
-				<p>โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+				<img src="/image/buildtext1/img_2.png" alt="img1" width="100%" height="100%">
+				<p>โรงภาษีร้อยชักสาม</p>
 			</div>
 			<div class="img3">
 				<button class="close_but" onclick="close_img(3)" type="button"><img src="/image/quit.png" alt="dd"></button>
-				<img src="/image/buildtext2/hotel_4.png" alt="img1" width="100%" height="100%">
-				<p>โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+				<img src="/image/buildtext1/img_3.png" alt="img1" width="100%" height="100%">
+				<p>โครงสร้างโรงภาษีร้อยชักสาม</p>
 			</div>
 			<div class="img4">
 				<button class="close_but" onclick="close_img(4)" type="button"><img src="/image/quit.png" alt="dd"></button>
-				<img src="/image/buildtext2/hotel_3.png" alt="img1" width="100%" height="100%">
-				<p>โรงแรมสยามอินเตอร์คอนติเนนตัลและผู้มีส่วนร่วม </p>
+				<img src="/image/buildtext1/img_4.png" alt="img1" width="100%" height="100%">
+				<p>บรรยากาศภายนอกโรงภาษีร้อยชักสาม </p>
 			</div>
 			<div class="img5">
 				<button class="close_but" onclick="close_img(5)" type="button"><img src="/image/quit.png" alt="dd"></button>
-				<img src="/image/buildtext2/hotel_5.png" alt="img1" width="100%" height="100%">
-				<p>ระหว่างรื้อถอน โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+				<img src="/image/buildtext1/img_5.png" alt="img1" width="100%" height="100%">
+				<p>บรรยากาศภายในโรงภาษีร้อยชักสาม</p>
 			</div>
 			<div class="img6">
 				<button class="close_but" onclick="close_img(6)" type="button"><img src="/image/quit.png" alt="dd"></button>
-				<img src="/image/buildtext2/hotel_6.png" alt="img1" width="100%" height="100%">
-				<p>ระหว่างรื้อถอน โรงแรมสยามอินเตอร์คอนติเนนตัล</p>
+				<img src="/image/buildtext1/img_6.png" alt="img1" width="100%" height="100%">
+				<p>โรงภาษีร้อยชักสาม</p>
 			</div>
-        <div onclick="close_text()" class="intext1"> dadsdsaasdasdasdasdsddsdadadsd</div>
-		<div class="item2">
-			<div  class="all_tabs">
-				<!-- ด้านล่างนี้ให้เปลี่ยนไปใช้ v-for -->
-				<div v-for="x in tabs">
-					<div class="tab_item" :active="x.id == active_tab" @click="changeTabs(x.id)">
+			<div class="img7">
+				<button class="close_but" onclick="close_img(7)" type="button"><img src="/image/quit.png" alt="dd"></button>
+				<img src="/image/buildtext1/img_7.png" alt="img1" width="100%" height="100%">
+				<p>สิ่งของเครื่องใช้ภายในโรงภาษีร้อยชักสาม</p>
+			</div>
+			<div onclick="change_text1()" class="intext1"> Youรู้มั้ย?! สมัยก่อนที่นี้มีคนมา dance กันให้พรึ่บ <br>จัดงานเต้นรำได้ FABULOUS สุดๆ ไปเลย!</div>
+			<div onclick="change_text2()" class="intext2"> ถึงจะเป็นที่เก่าแก่ แต่กลับออกแบบได้ so ทันสมัยสุดๆ <br>ตอน I เข้าไปนึกว่าได้กลับบ้านแน่ะ!</div>
+			<div onclick="change_text3()" class="intext3"> แต่ถ้า you คิดว่าสถาปัตยกรรมมีไว้เพื่อความสวยงาม <br>ที่นี่จะหักล้างความเชื่อนั้นได้เลย</div>
+			<div onclick="change_text4()" class="intext4"> ไม่ใช่เพียงเพื่อความบันเทิง <br>แต่ประโยชน์ในฐานะสถานราชการก็ถูกใช้อย่างคุ้มค่า แบบนั้นฟังดูดีไหม?</div>
+			<div onclick="close_text()" class="intext5"> OH! My Lord!! ใครจะไปคิดว่ามันว่าในอนาคตคนจะมารีโนเวทมัน <br>แบบนี้ก็เจ๋งจ๊าบเลยน่ะซี!</div>
+			<div class="item2 mob">
+				<nav role="navigation">
+					<div id="menuToggle">
+						
+						<input type="radio" name="toggle"/>
+						
+						<span><input type="radio" name="toggle"/></span>
+	
+						<ul id="menu">
+							<div class="roll">
+	
+								<div  class="all_tabs">
+									<!-- ด้านล่างนี้ให้เปลี่ยนไปใช้ v-for -->
+									<div v-for="x in tabs">
+										<div class="tab_item" :active="x.id == active_tab" @click="changeTabs(x.id)">
+										
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<img :src="pic" alt="build">
+							
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="item2 desk">
+				<div class="roll">
+	
+					<div  class="all_tabs">
+						<!-- ด้านล่างนี้ให้เปลี่ยนไปใช้ v-for -->
+						<div v-for="x in tabs">
+							<div class="tab_item" :active="x.id == active_tab" @click="changeTabs(x.id)">
+							
+							</div>
+							
+						</div>
 					</div>
 				</div>
+				<img :src="pic" alt="build">
+				<div class="la_1">
+				</div>
+					
 			</div>
-			<img :src="pic" alt="build">
-		</div>
 	</div>
 </div>
 
@@ -115,8 +176,7 @@
 		data:{
 			active_tab:0,
 			pic:`/image/buildtext2/1.png`,
-			scale1:"transform:scale3d(2,2,2) translateX(1em)",
-            move1:"rotateX(0deg) rotateY(311deg) rotateZ(0deg) translateY(-1em) translateX(2.5em) translateZ(0em)",
+            move1:"rotateX(0deg) rotateY(308deg) rotateZ(0deg) translateY(-3em) translateX(8.5em) translateZ(4em)",
 			tabs:[
 			{
 				id:0,
@@ -134,102 +194,151 @@
 				this.active_tab = x;
 				if(x == 0){
 					this.pic = `/image/buildtext2/1.png`;
-					this.scale1 = "transform:scale3d(2,2,2) translateX(1em)"
-                    this.move1 ="rotateX(0deg) rotateY(311deg) rotateZ(0deg) translateY(-1em) translateX(2.5em) translateZ(0em)"
+                    this.move1 ="rotateX(0deg) rotateY(308deg) rotateZ(0deg) translateY(-3em) translateX(8.5em) translateZ(4em)"
 				}else if(x == 1){
 					this.pic = `/image/buildtext2/2.png`;
-					this.scale1 = "transform:scale3d(2,2,2) translateX(1em)"
-                    this.move1 ="rotateX(5deg) rotateY(320deg) rotateZ(0deg) translateY(1.5em) translateX(6.8em) translateZ(8em)"
+                    this.move1 ="rotateX(0deg) rotateY(359deg) rotateZ(0deg) translateY(-2em) translateX(-4.5em) translateZ(12em)"
 				}else if(x == 2){
 					this.pic = `/image/buildtext2/3.png`;
-					this.scale1 = "transform:scale3d(2,2,2) translateX(1em)"
-                    this.move1 ="rotateX(6deg) rotateY(340deg) rotateZ(0deg) translateY(1.5em) translateX(2.8em) translateZ(2em)"
+                    this.move1 ="rotateX(6deg) rotateY(300deg) rotateZ(0deg) translateY(-1em) translateX(-0.2em) translateZ(-1em)"
 				}
 			}
 		}
 	})
 
-    const item = document.querySelector(".item2")
+    const item = document.querySelector(".desk")
     const img1 = document.querySelector(".img1")
 	const img2 = document.querySelector(".img2")
 	const img3 = document.querySelector(".img3")
 	const img4 = document.querySelector(".img4")
 	const img5 = document.querySelector(".img5")
 	const img6 = document.querySelector(".img6")
+	const img7 = document.querySelector(".img7")
     const text1 = document.querySelector(".intext1")
+	const text2 = document.querySelector(".intext2")
+	const text3 = document.querySelector(".intext3")
+	const text4 = document.querySelector(".intext4")
+	const text5 = document.querySelector(".intext5")
     const hum = document.querySelector(".human")
 	function pic1(a){
 		if(a==1){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
 			img4.classList.remove("preloader-show")
 			img5.classList.remove("preloader-show")
 			img6.classList.remove("preloader-show")
+			img7.classList.remove("preloader-show")
 			item.classList.remove("preloader-show")
 			item.classList.add("preloader-hidden")
 			img1.classList.add("preloader-show")
 		}
 		else if(a==2){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
 			img4.classList.remove("preloader-show")
 			img5.classList.remove("preloader-show")
 			img6.classList.remove("preloader-show")
+			img7.classList.remove("preloader-show")
 			item.classList.remove("preloader-show")
 			item.classList.add("preloader-hidden")
 			img2.classList.add("preloader-show")
 		}
 		else if(a==3){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
 			img4.classList.remove("preloader-show")
 			img5.classList.remove("preloader-show")
 			img6.classList.remove("preloader-show")
+			img7.classList.remove("preloader-show")
 			item.classList.remove("preloader-show")
 			item.classList.add("preloader-hidden")
 			img3.classList.add("preloader-show")
 		}
 		else if(a==4){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
 			img4.classList.remove("preloader-show")
 			img5.classList.remove("preloader-show")
 			img6.classList.remove("preloader-show")
+			img7.classList.remove("preloader-show")
 			item.classList.remove("preloader-show")
 			item.classList.add("preloader-hidden")
 			img4.classList.add("preloader-show")
 		}
 		else if(a==5){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
 			img4.classList.remove("preloader-show")
 			img5.classList.remove("preloader-show")
 			img6.classList.remove("preloader-show")
+			img7.classList.remove("preloader-show")
 			item.classList.remove("preloader-show")
 			item.classList.add("preloader-hidden")
 			img5.classList.add("preloader-show")
 		}
 		else if(a==6){
 			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
 			img1.classList.remove("preloader-show")
 			img2.classList.remove("preloader-show")
 			img3.classList.remove("preloader-show")
 			img4.classList.remove("preloader-show")
 			img5.classList.remove("preloader-show")
 			img6.classList.remove("preloader-show")
+			img7.classList.remove("preloader-show")
 			item.classList.remove("preloader-show")
 			item.classList.add("preloader-hidden")
 			img6.classList.add("preloader-show")
+		}
+		else if(a==7){
+			text1.classList.remove("preloader-show")
+			text2.classList.remove("preloader-show")
+			text3.classList.remove("preloader-show")
+			text4.classList.remove("preloader-show")
+			text5.classList.remove("preloader-show")
+			img1.classList.remove("preloader-show")
+			img2.classList.remove("preloader-show")
+			img3.classList.remove("preloader-show")
+			img4.classList.remove("preloader-show")
+			img5.classList.remove("preloader-show")
+			img6.classList.remove("preloader-show")
+			img7.classList.remove("preloader-show")
+			item.classList.remove("preloader-show")
+			item.classList.add("preloader-hidden")
+			img7.classList.add("preloader-show")
 		}
 	}
     function close_img(s){
@@ -269,6 +378,12 @@
 			img6.classList.add("preloader-hidden")
 			item.classList.add("preloader-show")
 		}
+		else if(s==7){
+			item.classList.remove("preloader-hidden")
+			img7.classList.remove("preloader-show")
+			img7.classList.add("preloader-hidden")
+			item.classList.add("preloader-show")
+		}
         
 	}
     function hum2(){
@@ -281,6 +396,10 @@
 		img6.classList.remove("preloader-show")
         item.classList.remove("preloader-show")
         text1.classList.remove("preloader-hidden")
+		text2.classList.remove("preloader-show")
+		text3.classList.remove("preloader-show")
+		text4.classList.remove("preloader-show")
+		text5.classList.remove("preloader-show")
 		item.classList.add("preloader-hidden")
         text1.classList.add("preloader-show")
         img1.classList.add("preloader-hidden")
@@ -290,12 +409,32 @@
 		img5.classList.add("preloader-hidden")
 		img6.classList.add("preloader-hidden")
 	}
+	function change_text1(){
+		text1.classList.remove("preloader-show")
+		text1.classList.add("preloader-hidden")
+		text2.classList.add("preloader-show")
+	}
+	function change_text2(){
+        text2.classList.remove("preloader-show")
+		text2.classList.add("preloader-hidden")
+		text3.classList.add("preloader-show")
+	}
+	function change_text3(){
+        text3.classList.remove("preloader-show")
+		text3.classList.add("preloader-hidden")
+		text4.classList.add("preloader-show")
+	}
+	function change_text4(){
+        text4.classList.remove("preloader-show")
+		text4.classList.add("preloader-hidden")
+		text5.classList.add("preloader-show")
+	}
     function close_text(){
         item.classList.remove("preloader-hidden")
-        text1.classList.remove("preloader-show")
-		text1.classList.add("preloader-hidden")
+        text5.classList.remove("preloader-show")
+		text5.classList.add("preloader-hidden")
         item.classList.add("preloader-show")
-        text1.classList.remove("preloader-hidden")
+        text5.classList.remove("preloader-hidden")
         item.classList.remove("preloader-show")
 	}
 
@@ -304,6 +443,8 @@
 		
 		window.location.href ="home.html"
 	}
+
+	
   </script>
 </body>
 </html>

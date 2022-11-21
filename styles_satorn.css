@@ -4,10 +4,6 @@
   
   }
   
-  .ex2 {
-    perspective: 150px;
-  
-  }
   
   .cube {
     font-size: 4em;
@@ -15,87 +11,93 @@
     margin: 1.5em auto;
     transform-style: preserve-3d;
     transform: rotateX(2deg) rotateY(306deg) rotateZ(360deg) translateY(1em) translateX(4.5em) translateZ(-2em);
-  
+    transition: 0.5s  ease;
+  }
+  .cur_pic{
+    cursor:url('/image/cursor_look.png'),auto;
+  }
+  .door_in{
+    cursor:url('/image/go.png'),auto;
   }
   
   .side {
     position: absolute;
     width: 2em;
     height: 2em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
+    background: rgba(100,100,100);
+    border: 1px solid ;
     text-align: center;
   }
   .side1 {
     position: absolute;
     width: 3em;
     height: 5em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
+    background: rgba(100,100,100);
+    border: 1px solid ;
     text-align: center;
   }
   .side2 {
     position: absolute;
     width: 6.5em;
     height: 3em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
+    background: rgba(100,100,100);
+    border: 1px solid ;
     text-align: center;
   }
   .floor {
     position: absolute;
     width: 2.8em;
     height: 3.2em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
+    background: rgba(100,100,100);
+    border: 1px solid ;
     text-align: center;
   }
   .floor1 {
       position: absolute;
       width: 2.8em;
       height: 4.5em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
   }
   .longfloor {
       position: absolute;
       width: 1em;
       height: 6em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
   }
   .sky {
       position: absolute;
       width: 5em;
       height: 3.5em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
   }
   .sky2 {
       position: absolute;
       width: 5em;
       height: 0.6em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
   }
   .ceiling {
     position: absolute;
     width: 0.8em;
     height: 2em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
+    background: rgba(100,100,100);
+    border: 1px solid ;
     text-align: center;
   }
   .pic {
     position: absolute;
     width: 2em;
     height: 3em;
-    background: rgba(100,100,100,0.5);
-    border: 1px solid red;
+    background: rgba(100,100,100);
+    border: 1px solid ;
     text-align: center;
     line-height: 2em;
   }
@@ -103,32 +105,32 @@
       position: absolute;
       width: 4.5em;
       height: 2.5em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
   }
   .pic3{
       position: absolute;
       width: 3.5em;
       height: 2.2em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
   }
   .pic4{
       position: absolute;
       width: 5em;
       height: 3em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
   }
   .door_side{
       position: absolute;
       width: 0.9em;
       height: 1.8em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
       line-height: 2em;
   }
@@ -136,8 +138,8 @@
       position: absolute;
       width: 0.6em;
       height: 1.5em;
-      background: rgba(100,100,100,0.5);
-      border: 1px solid red;
+      background: rgba(100,100,100);
+      border: 1px solid ;
       text-align: center;
       line-height: 2em;
   }

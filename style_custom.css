@@ -7,6 +7,9 @@
   .cur_pic{
     cursor:url('/image/cursor_look.png'),auto;
   }
+  .door_in{
+    cursor:url('/image/go.png'),auto;
+  }
   .cube {
     font-size: 4em;
     width: 2em;
@@ -63,6 +66,15 @@
     text-align: center;
     line-height: 2em;
   }
+  .side4_2 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid white;
+    text-align: center;
+    line-height: 2em;
+  }
   .side5 {
     position: absolute;
     width: 1.6em;
@@ -108,7 +120,7 @@
   .left3 {transform: rotateY(90deg) translateZ(-1.5em) translateY(.2em) translateX(-1em);}
   
   .bottom4 {transform: rotateX(90deg) translateZ(-3em) translateY(4em) translateX(1em);}
-  
+  .bottom5 {transform: rotateX(90deg) translateZ(-2.99em) translateY(1em) translateX(4.1em);}
   
   .back1 {transform: translateZ(.5em) translateY(4.7em) translateX(8em);}
   .back2 {transform: translateZ(.5em) translateY(4.2em) translateX(1em);}
@@ -116,27 +128,75 @@
   .back4 {transform: translateZ(-.7em) translateY(1em) translateX(3.5em);}
   .back5 {transform: translateZ(3.5em) translateY(4.5em) translateX(3em);}
   
-
+  .stair_all{
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+  }
+  .stair_all1{
+    transform-style: preserve-3d;
+    transform: rotateY(90deg) translate3d(-5.5em,-2.1em,-1.2em);
+  }
+  .stair_all2{
+    transform-style: preserve-3d;
+    transform: rotateY(-90deg) translate3d(-4em,-2.1em,-10.4em);
+  }
   .stair1 {
-    font-size: 4em;
+    font-size: 1em;
     width: 2em;
     margin: 1.5em auto;
     transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.3em) translateX(-1em) scale3d(0.08,0.08,0.055);
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-7.5em) translateX(-4em) scale3d(0.3,0.3,0.5);
   }
   .stair2 {
-    font-size: 4em;
+    font-size: 1em;
     width: 2em;
     margin: 1.5em auto;
     transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.35em) translateX(-0.95em) scale3d(0.08,0.08,0.055);
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-7.2em) translateX(-3.7em) scale3d(0.3,0.3,0.5);
   }
+  .stair3 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.9em) translateX(-3.4em) scale3d(0.3,0.3,0.5);
+  }
+  .stair4 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.6em) translateX(-3.1em) scale3d(0.3,0.3,0.5);
+  }
+  .stair5 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.3em) translateX(-2.8em) scale3d(0.3,0.3,0.5);
+  }
+  .stair6 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6em) translateX(-2.5em) scale3d(0.3,0.3,0.5);
+  }
+  .stair7 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-5.7em) translateX(-2.2em) scale3d(0.3,0.3,0.5);
+  }
+  
   .sideT_B {
     position: absolute;
     width: 1.5em;
     height: 6em;
-    background: gray;
-    border: 1px solid white;
+    background: url(image/texture.jpg);
+    background-position: top;
+    border: 1px solid ;
     text-align: center;
     line-height: 2em;
   }
@@ -144,8 +204,9 @@
     position: absolute;
     width: 6em;
     height: 1em;
-    background: gray;
-    border: 1px solid white;
+    background: url(image/texture.jpg);
+    background-position: bottom left;
+    border: 1px solid ;
     text-align: center;
     line-height: 2em;
   }
@@ -153,8 +214,9 @@
     position: absolute;
     width: 1.5em;
     height: 1em;
-    background: gray;
-    border: 1px solid white;
+    background: url(image/texture.jpg);
+    background-position: top left;
+    border: 1px solid ;
     text-align: center;
     line-height: 2em;
   }
@@ -164,7 +226,7 @@
    .right {transform: rotateY(90deg) translateZ(-1.5em) translateY(3em) translateX(0em);}
    .left {transform: rotateY(-90deg) translateZ(3em) translateY(3em) translateX(0em);}
    .bottom {transform: rotateX(-90deg) translateZ(1em) translateY(0em) translateX(0em);}
-   .back {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
+   .back2 {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
   /* .door1 {transform: rotateY(-90deg) translateZ(2.5em) translateY(-0.4em) translateX(-0.5em);}
   .door2 {transform: rotateY(-90deg) translateZ(1.5em) translateY(-1.35em) translateX(4.5em);}
   .door3 {transform: rotateY(-180deg) translateZ(0em) translateY(-3.85em) translateX(-1em);}
@@ -209,7 +271,7 @@
    .back {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
 
    .back {transform: rotateY(-180deg) translateZ(1em);}
-
+   .door {transform: translateZ(2em) translateX(1.3000000000000007em) translateY(5.399999999999999em) scale3d(2,2,2) rotateY(90deg);}
   .door_in:hover{
     transform: rotateY(25deg);
     transform-origin: center left;

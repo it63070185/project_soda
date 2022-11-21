@@ -340,7 +340,7 @@ model-viewer {
   width: 100%;
   margin: 23em auto;
   transform-style: preserve-3d;
-  transform: rotateX(360deg) rotateY(45deg) translate(50%, -50%);
+  transform: rotateX(345deg) rotateY(45deg) rotateZ(0deg) translate3D(50%, -50%, -30px);
 }
 
 .side {

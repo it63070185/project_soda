@@ -186,6 +186,23 @@
 		}
 	}
 
+	function go_build5(){
+		window.location.href ="lastpage.html";
+	}
+	
+	const door_last = document.querySelector(".door4")
+	function OpenTheLasts(){
+		var link5 = window.location.href
+		var MyArry5 = link5.split("?")
+		var num5 = MyArry5[1]
+		if(num5 == ""){
+			console.log("HI")
+			door_last.classList.remove("preloader-hidden")
+			door_last.classList.add("preloader-show")
+   		}
+	}
+	OpenTheLasts();
+
 	let vue = new Vue({
 		el:'#app',
 		data:{

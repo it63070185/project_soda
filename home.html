@@ -8,6 +8,7 @@
 	<link rel="icon" href="image/1x/logo.png" type="image/icon type">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="styles_home.css">
+	<script src="CountPage.js"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
@@ -170,7 +171,7 @@
 		</div>
 	</div>
 </div>
-
+<div id="CounterPage"></div>
 <div id="cursor"></div>
 <script>
 	let cursor = document.getElementById("cursor");
@@ -196,17 +197,72 @@
 		}, 2500)
 		
 	})
+
+	//del str
+	function deleteWord (str,searchTerm) {
+    var n = str.search(searchTerm);
+    while (str.search(searchTerm) > -1) {
+        n = str.search(searchTerm);
+        str = str.substring(0, n) + str.substring(n + searchTerm.length, str.length);
+    }
+    return str;
+	}
+
 	const door1 = document.getElementById("door1")
 	function go_build1(){
-		window.location.href ="build1.html"
+		var link = window.location.href
+		var MyArry = link.split("?")
+		var num = MyArry[1]
+		var Checknums = num.split("1")
+		// console.log(num)
+		// console.log(Checknums.length)
+		// console.log(deleteWord(num,'1'))
+		if(Checknums.length == 2){
+			window.location.href ="build1.html?" + deleteWord(num,'1');
+		}
+		else{
+			window.location.href ="build1.html?" + num
+		}
 	}
 	const door2 = document.getElementById("door2")
 	function go_build2(){
-		window.location.href ="build2.html"
+		var link2 = window.location.href
+		var MyArry2 = link2.split("?")
+		var num2 = MyArry2[1]
+		var Checknums2 = num2.split("2")
+		if(Checknums2.length == 2){
+			window.location.href ="build2.html?" + deleteWord(num2,'2');
+		}
+		else{
+			window.location.href ="build2.html?" + num2
+		}
 	}
 	const door3 = document.getElementById("door3")
 	function go_build3(){
-		window.location.href ="build3.html"
+		var link3 = window.location.href
+		var MyArry3 = link3.split("?")
+		var num3 = MyArry3[1]
+		var Checknums3 = num3.split("3")
+		if(Checknums3.length == 2){
+			window.location.href ="build3.html?" + deleteWord(num3,'3');
+		}
+		else{
+			window.location.href ="build3.html?" + num3
+		}
+	}
+
+	const door4 = document.getElementById("door4")
+	function go_build4(){
+		var link4 = window.location.href
+		var MyArry4 = link4.split("?")
+		var num4 = MyArry4[1]
+		var Checknums4 = num4.split("4")
+		if(Checknums4.length == 2){
+			window.location.href ="build4.html?" + deleteWord(num4,'4');
+		}
+		else{
+			window.location.href ="build4.html?" + num4
+		}
 	}
 
 	let vue = new Vue({
@@ -231,7 +287,6 @@
 			
 		
 	})
-	
   </script>
 </body>
 </html>

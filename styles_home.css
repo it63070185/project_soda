@@ -135,7 +135,11 @@
   .door1 {transform: rotateY(-90deg) translateZ(2.5em) translateY(-0.4em) translateX(-0.5em);}
   .door2 {transform: rotateY(-90deg) translateZ(1.5em) translateY(-1.6em) translateX(4.5em);}
   .door3 {transform: rotateY(-180deg) translateZ(0em) translateY(-4.4em) translateX(-1em);}
-  .door4 {transform: rotateY(-180deg) translateZ(-2.8em) translateY(-5.1em) translateX(-1em);}
+  .door4 {
+    opacity: 0;
+    visibility: hidden;
+    width: 1.5em; 
+    transform: rotateY(-180deg) translateZ(-2.8em) translateY(-5.1em) translateX(-4em);}
   .door5 {transform: rotateY(-90deg) translateZ(-2.2em) translateY(-8em) translateX(6em);}
   
   .stair1 {

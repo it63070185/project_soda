@@ -16,7 +16,9 @@
             <div>
                 <div class="text_1">
                     <p class="hover-link"  cursor-type="button">
-                    click anywhere to continue<br> click <img src="image/skip.png" alt=""> to skip.</p>
+                        สุดท้ายนี้ ขอบคุณที่มาเยือน<br>
+                        และร่วมสัมผัสถึงคุณค่า รับรู้ถึงความผูกพันที่มีต่อสถานที่อันหอมหวานในความทรงจำ 
+                        </p>
                     
                 </div>
             </div>
@@ -44,7 +46,7 @@
             <div>
                 <div class="text_1">
                     <p class="hover-link"  cursor-type="button">
-                        You didn't Skip?
+                        ซึ่งไม่หลงเหลือในปัจจุบันอีกแล้ว
                     </p>
                 </div>
             </div>
@@ -72,7 +74,35 @@
             <div>
                 <div class="text_1">
                     <p class="hover-link"  cursor-type="button">
-                    Let Play Apex!
+                    หวังว่าสถานที่อันเป็นที่รัก และเต็มไปด้วยความทรงจำอันแสนสำคัญของคุณ จะไม่มาปรากฎที่นี่
+                    </p>
+                </div>
+            </div>
+            <div class="theBlock">
+                <div class="ex1">
+                <div class="cube">
+                <div class="side front">1</div>
+                <div class="side1 back">6</div>
+                <div class="side2 right">4</div>
+                <div class="side3 left">3</div>
+                <div class="side4 top">5</div>
+                <div class="side5 bottom">2</div>
+                <div class="tside front1">t1</div>
+                <div class="tside1 back1">t6</div>
+                <div class="tside2 right1">t4</div>
+                <div class="tside3 left1">t3</div>
+                <div class="tside4 top1">t5</div>
+                <div class="tside5 bottom1">t2</div>
+                <div class="human_side human"><img src="human.png" width="100%" height="100%"></div>
+                </div>
+                </div>
+        </div>
+        </button>
+        <button id="page_5" onclick="change_line4()">
+            <div>
+                <div class="text_1">
+                    <p class="hover-link"  cursor-type="button">
+                        ขอให้เราไม่พบกันอีก
                     </p>
                 </div>
             </div>
@@ -127,6 +157,11 @@
 	const page_4 = document.getElementById("page_4")
 	function change_line3(){
 		page_4.classList.add("preloader-hidden")
+	}
+
+    const page_5 = document.getElementById("page_5")
+	function change_line4(){
+		page_5.classList.add("preloader-hidden")
 		window.location.href ="index.html"
 	}
 

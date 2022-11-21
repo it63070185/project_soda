@@ -61,6 +61,18 @@ body{
 	z-index: 1;
 	text-align: center;
 }
+#page_5{
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+	margin: 0%;
+    background: rgb(200, 200, 200);
+	color: #fff;
+    position: fixed;
+	transition: all .8s ease;
+	z-index: 1;
+	text-align: center;
+}
 #skip{
 	position: fixed;
 	top: 95%;
@@ -88,7 +100,7 @@ model-viewer {
 #skip img {
 	width: 2em;
 }
-#page_2 .text_1 ,#page_3 .text_1 ,#page_4 .text_1{
+#page_2 .text_1 ,#page_3 .text_1 ,#page_4 .text_1, #page_5 .text_1{
 	font-size: 1.5em;
 	font-weight: normal;
 	color: #fff;
@@ -327,7 +339,7 @@ model-viewer {
 	position: absolute;
 	width: 50%;
 	height: 50%;
-	transform: translate(110%, -50%);
+	transform: translate(50%, -50%);
 	z-index: 200;
 }
 /*chair*/
@@ -338,9 +350,9 @@ model-viewer {
 
 .cube {
   width: 100%;
-  margin: 8em auto;
+  margin: 23em auto;
   transform-style: preserve-3d;
-  transform: rotateX(343deg) rotateY(63deg);
+  transform: rotateX(345deg) rotateY(45deg) rotateZ(0deg) translate3D(50%, -50%, -30px);
 }
 
 .side {

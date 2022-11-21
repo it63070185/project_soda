@@ -487,6 +487,26 @@ model-viewer {
 /* .bottom1 {transform:rotateX(24deg) translateZ(-0.25em) translateX(0em) translateY(1.25em);} */
 .back1 {transform: rotateX(24deg) rotateY(-180deg) translateZ(.5em) translateY(-2em) translateX(0em);}
 
+/*HD*/
+@media screen and (max-width:1366px){
+	.theBlock{
+		height: 52%;
+	}
+	.ex1{
+		transform: scale3d(2.5,2.5,2.5);
+	}
+	#page_2 .text_1, #page_3 .text_1, #page_4 .text_1, #page_5 .text_1{
+		font-size: 1.2em;
+		position: absolute;
+		top: 40%;
+	}
+	#skip{
+		position: fixed;
+		top: 88%;
+		left: 90%;
+		transform: scale(1);
+	}
+}
 /*ipadpro*/
 @media screen and (max-width:1024px){
 	.theBlock{

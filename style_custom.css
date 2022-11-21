@@ -126,7 +126,7 @@
   .back2 {transform: translateZ(.5em) translateY(4.2em) translateX(1em);}
   .back3 {transform: translateZ(-.7em) translateY(.2em) translateX(8em);}
   .back4 {transform: translateZ(-.7em) translateY(1em) translateX(3.5em);}
-  .back5 {transform: translateZ(3.5em) translateY(4.5em) translateX(3em);}
+  .back5 {transform: translateZ(3.5em) translateY(4.5em) translateX(8em);}
   
   .stair_all{
     transform-style: preserve-3d;
@@ -271,12 +271,12 @@
    .back {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
 
    .back {transform: rotateY(-180deg) translateZ(1em);}
-   .door {transform: translateZ(2em) translateX(1.3000000000000007em) translateY(5.399999999999999em) scale3d(2,2,2) rotateY(90deg);}
+   .door {transform: translateZ(2em) translateX(1.3000000000000007em) translateY(5.2em) scale3d(2,2.5,2) rotateY(90deg);}
   .door_in:hover{
     transform: rotateY(25deg);
     transform-origin: center left;
     transition: 0.8s;
-    fill: blue;
+    fill: white;
   }
   .img1{
     position: absolute;

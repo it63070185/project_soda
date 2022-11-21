@@ -142,7 +142,99 @@
       z-index: 50;
       text-align: center;
       line-height: 2em;
+      cursor: url('/image/talk1.png'),auto;
   }
+  .stair_all{
+    transform-style: preserve-3d;
+    transform: rotateY(90deg) scale3d(0.4,.8,1) translate3d(-27.5em,-1em,-2.1em);
+  }
+  .stair1 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-7.5em) translateX(-4em) scale3d(0.3,0.3,0.5);
+  }
+  .stair2 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-7.2em) translateX(-3.7em) scale3d(0.3,0.3,0.5);
+  }
+  .stair3 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.9em) translateX(-3.4em) scale3d(0.3,0.3,0.5);
+  }
+  .stair4 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.6em) translateX(-3.1em) scale3d(0.3,0.3,0.5);
+  }
+  .stair5 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.3em) translateX(-2.8em) scale3d(0.3,0.3,0.5);
+  }
+  .stair6 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6em) translateX(-2.5em) scale3d(0.3,0.3,0.5);
+  }
+  .stair7 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-5.7em) translateX(-2.2em) scale3d(0.3,0.3,0.5);
+  }
+  
+  .sideT_B {
+    position: absolute;
+    width: 1.5em;
+    height: 6em;
+    background: url(image/texture.jpg);
+    background-position: top;
+    border: 1px solid ;
+    text-align: center;
+    line-height: 2em;
+  }
+   .sideL_R {
+    position: absolute;
+    width: 6em;
+    height: 1em;
+    background: url(image/texture.jpg);
+    background-position: bottom left;
+    border: 1px solid ;
+    text-align: center;
+    line-height: 2em;
+  }
+   .sideF_B {
+    position: absolute;
+    width: 1.5em;
+    height: 1em;
+    background: url(image/texture.jpg);
+    background-position: top left;
+    border: 1px solid ;
+    text-align: center;
+    line-height: 2em;
+  }
+  
+   .front1 {transform: translateZ(3em) translateY(3em) translateX(0em);}
+   .top1 {transform: rotateX(90deg) translateZ(0em) translateY(0em) translateX(0em);}
+   .right1 {transform: rotateY(90deg) translateZ(-1.5em) translateY(3em) translateX(0em);}
+   .left {transform: rotateY(-90deg) translateZ(3em) translateY(3em) translateX(0em);}
+   .bottom {transform: rotateX(-90deg) translateZ(1em) translateY(0em) translateX(0em);}
+   .back2 {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
   .front {transform: translateZ(1em);}
 
   .human {transform: translateZ(2em) translateX(4em) translateY(3em) translateZ(6.4em);}
@@ -152,7 +244,7 @@
   .left_pic2 {transform: rotateY(90deg) translateZ(-4.4em) translateY(0em) translateX(-5.9em);}
   .left_pic3 {transform: rotateY(0deg) translateZ(3.7em) translateY(-1.15em) translateX(-1.8em);}
   .left_pic4 {transform: rotateY(0deg) translateZ(3.7em) translateY(1.4em) translateX(1.52em);}
-  .bottom_floor {transform: rotateX(-90deg)  translateZ(1.1em) translateY(-8.36em) translateX(-1.9em);}
+  .bottom_floor {transform: rotateX(-90deg)  translateZ(1.2em) translateY(-8.36em) translateX(-1.9em);}
   .bottom_floor2 {transform:  rotateX(-90deg) translateZ(2.3em) translateY(-7.5em) translateX(3em);}
   .bottom_floor3 {transform: rotateX(-90deg) rotateZ(90deg) translateZ(1.48em) translateY(-2.4em) translateX(-3.7em);}
   .locceiling1 {transform: rotateX(-90deg) translateZ(-4.1em) translateY(-5.5em) translateX(0.5em) ;}
@@ -213,21 +305,10 @@
    
   }
   .intext1{
-    position: absolute;
-    transform: translate3d(30em,20em,0em);
-    font-size: 20px;
-    width: 90%;
-    height: 90%;
-    z-index: 100;
-    cursor: url(/image/back\ or\ quit.png)32 32,auto;
-    opacity: 0;
-    visibility: hidden;
-  }
-  .intext1{
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -380px;
+    top: -450px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -238,8 +319,8 @@
   .intext2{
     position: relative;
     font-size: 1em;
-    left: 1vw;
-    top: -380px;
+    left: 0.2vw;
+    top: -450px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -251,7 +332,7 @@
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -430px;
+    top: -490px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -262,8 +343,8 @@
   .intext4{
     position: relative;
     font-size: 1em;
-    left: -1vw;
-    top: -430px;
+    left: -0.2vw;
+    top: -490px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -275,7 +356,7 @@
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -460px;
+    top: -520px;
     width: 90%;
     height: 90%;
     z-index: 100;

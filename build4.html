@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="image/1x/logo.png" type="image/icon type">
 	<link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles_satorn.css">
 	<script src="CountPage.js"></script>
+    <link rel="stylesheet" href="styles_scala.css">
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	<script src="https://cdn.babylonjs.com/babylon.js"></script>
@@ -24,18 +24,23 @@
 		<div class="item1" id="view">	
 			<div class="ex1">
                 <div class="cube" v-bind:style="{ transform: move1 }">
-					<div onclick="pic1(1)" class="cur_pic pic left_pic"><img src="/image/buildtext3/02.png" alt="build" width="100%" height="100%"></div>
-                    <div onclick="pic1(2)" class="cur_pic pic2 left_pic2"><img src="/image/buildtext3/01.png" alt="build" width="100%" height="100%"></div>
-                    <div onclick="pic1(3)" class="cur_pic pic3 left_pic3"><img src="/image/buildtext3/03.png" alt="build" width="100%" height="100%"></div>
-                    <div onclick="pic1(4)" class="cur_pic pic4 left_pic4"><img src="/image/buildtext3/04.png" alt="build" width="100%" height="100%"></div>
+					<div onclick="pic1(1)" class="cur_pic pic left_pic"><img src="/image/buildtext4/03.png" alt="build" width="100%" height="100%"></div>
+                    <div onclick="pic1(2)" class="cur_pic pic2 left_pic2"><img src="/image/buildtext4/01.png" alt="build" width="100%" height="100%"></div>
+                    <div onclick="pic1(3)" class="cur_pic pic3 left_pic3"><img src="/image/buildtext4/04.png" alt="build" width="100%" height="100%"></div>
+                    <div onclick="pic1(4)" class="cur_pic pic4 left_pic4"><img src="/image/buildtext4/02.png" alt="build" width="100%" height="100%"></div>
+                    
                     <div onclick="hum2()" class="human_side human"><img src="/image/human/1x/1.png" alt="human" width="100%" height="100%"></div>
                     <div class="floor bottom_floor"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
                     <div class="floor1 bottom_floor2"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
                     <div class="longfloor bottom_floor3"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
+                    <div class="small_floor bottom_floor4"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
                     <div class="sky locceiling1"><img src="/image/sky.jpg" alt="build" width="100%" height="100%"></div>
                     <div class="sky2 locceiling2"></div>
                     <div class="ceiling locceiling3"><img src="/image/sky.jpg" alt="build" width="100%" height="100%"></div>
-					<svg class="door"> viewBox="0 0 100 100">
+                    <div class="ceiling1 locceiling4"></div>
+                    <div class="ceiling2 locceiling5"></div>
+
+                    <svg class="door"> viewBox="0 0 100 100">
 						<path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
 						</path>
 						<path onclick="back()"class="door_in"stroke="#606060" stroke-width="1" fill="#606060"
@@ -43,34 +48,34 @@
 						</path>
 					</svg>
                 </div>
-              </div>
+            </div>
 		</div>
 		<div class="img1">
 			<button class="close_but" onclick="close_img(1)" type="button"><img src="/image/quit.png" alt="dd"></button>
-			<img src="/image/buildtext3/02.png" alt="build" width="100%" height="100%">
-			<p>สาธร ยูนีค ทาวเวอร์</p>
+			<img src="/image/buildtext4/03.png" alt="build" width="100%" height="100%">
+			<p>ลักษณะสถาปัตยกรรมแบบโครงสร้างทรงโค้ง เอกลักษณ์ของโรงภาพยนตร์สกาลา</p>
 		</div>
 		<div class="img2">
 			<button class="close_but" onclick="close_img(2)" type="button"><img src="/image/quit.png" alt="dd"></button>
-			<img src="/image/buildtext3/01.png" alt="build" width="100%" height="100%">
-			<p>บรรยากาศภายนอกสาธร ยูนีค ทาวเวอร์</p>
+			<img src="/image/buildtext4/01.png" alt="build" width="100%" height="100%">
+			<p>บรรยากาศภายในโรงภาพยนตร์สกาลา</p>
 		</div>
 		<div class="img3">
 			<button class="close_but" onclick="close_img(3)" type="button"><img src="/image/quit.png" alt="dd"></button>
-			<img src="/image/buildtext3/03.png" alt="build" width="100%" height="100%">
-			<p>ภาพถ่ายวิวทิวทัศน์จากตึก สาธร ยูนีค ทาวเวอร์</p>
+			<img src="/image/buildtext4/04.png" alt="build" width="100%" height="100%">
+			<p>ระหว่างรื้อถอน โรงภาพยนตร์สกาลา</p>
 		</div>
 		<div class="img4">
 			<button class="close_but" onclick="close_img(4)" type="button"><img src="/image/quit.png" alt="dd"></button>
-			<img src="/image/buildtext3/04.png" alt="build" width="100%" height="100%">
-			<p>บรรยากาศภายในสาธร ยูนีค ทาวเวอร์ </p>
+			<img src="/image/buildtext4/02.png" alt="build" width="100%" height="100%">
+			<p>บรรยากาศภายนอกโรงภาพยนตร์สกาลา </p>
 		</div>
 		
-		<div onclick="change_text1()" class="intext1"> Youรู้มั้ย?! สมัยก่อนที่นี้มีคนมา dance กันให้พรึ่บ <br>จัดงานเต้นรำได้ FABULOUS สุดๆ ไปเลย!</div>
-		<div onclick="change_text2()" class="intext2"> ถึงจะเป็นที่เก่าแก่ แต่กลับออกแบบได้ so ทันสมัยสุดๆ <br>ตอน I เข้าไปนึกว่าได้กลับบ้านแน่ะ!</div>
-		<div onclick="change_text3()" class="intext3"> แต่ถ้า you คิดว่าสถาปัตยกรรมมีไว้เพื่อความสวยงาม <br>ที่นี่จะหักล้างความเชื่อนั้นได้เลย</div>
-		<div onclick="change_text4()" class="intext4"> ไม่ใช่เพียงเพื่อความบันเทิง <br>แต่ประโยชน์ในฐานะสถานราชการก็ถูกใช้อย่างคุ้มค่า แบบนั้นฟังดูดีไหม?</div>
-		<div onclick="close_text()" class="intext5"> OH! My Lord!! ใครจะไปคิดว่ามันว่าในอนาคตคนจะมารีโนเวทมัน <br>แบบนี้ก็เจ๋งจ๊าบเลยน่ะซี!</div>
+		<div onclick="change_text1()" class="intext1"> เคยเข้าไปที่นั่นหรือเปล่า</div>
+		<div onclick="change_text2()" class="intext2"> ที่ตรงนั้นน่ะเคยคึกคักสุด ๆ ไปเลย</div>
+		<div onclick="change_text3()" class="intext3"> ตอนก้าวผ่านม่านเข้าไปโรงภาพยนต์น่ะเหมือนทิ้งโลกแห่งความจริงแล้วก้าวสู่อีกโลกนึงเลย</div>
+		<div onclick="change_text4()" class="intext4"> เคยสังเกตไหม? หน้าจอของที่นี่ก็ใหญ่มากเลยนะ ฉันนึกว่าไดโนเสาร์ในหนังมีชีวิตขึ้นมาจริง ๆ เลยแน่ะ</div>
+		<div onclick="close_text()" class="intext5"> ฮะฮ่า จังหวะนั้นแหละ ที่ฉันแอบจับมือหล่อน ..แค่คิดถึงก็ใจเต้นซะเหมือนย้อนเวลากลับไปเลยล่ะ</div>
 		<div class="item2 mob">
 			<nav role="navigation">
 				<div id="menuToggle">

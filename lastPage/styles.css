@@ -76,8 +76,9 @@ body{
 #skip{
 	position: fixed;
 	top: 95%;
-  	left: 97%;
+  	left: 95%;
 	z-index: 4;
+	transform: scale(1);
 }
 .position_cam{
 	text-align: left;
@@ -104,14 +105,13 @@ model-viewer {
 	font-size: 1.5em;
 	font-weight: normal;
 	color: rgb(0, 0, 0);
-	text-align: center;
+	text-align: left;
   	position: absolute;
-  	top: 50%;
+  	top: 45%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
 #preloader{
-	
 	background: #000;
 	width: 100%;
     height: 100vh;
@@ -345,12 +345,12 @@ model-viewer {
 /*chair*/
 .ex1 {
   perspective: 1000px;
-  transform:scale3d(2,2,2) ;
+  transform:scale3d(3,3,3) ;
 }
 
 .cube {
   width: 100%;
-  margin: 23em auto;
+  margin: 40vh auto;
   transform-style: preserve-3d;
   transform: rotateX(345deg) rotateY(45deg) rotateZ(0deg) translate3D(50%, -50%, -30px);
 }
@@ -487,3 +487,64 @@ model-viewer {
 /* .bottom1 {transform:rotateX(24deg) translateZ(-0.25em) translateX(0em) translateY(1.25em);} */
 .back1 {transform: rotateX(24deg) rotateY(-180deg) translateZ(.5em) translateY(-2em) translateX(0em);}
 
+/*ipadpro*/
+@media screen and (max-width:1024px){
+	.theBlock{
+		height: 50%;
+	}
+	.ex1{
+		transform: scale3d(5,5,5);
+	}
+	#page_2 .text_1, #page_3 .text_1, #page_4 .text_1, #page_5 .text_1{
+		font-size: 2.5em;
+		position: absolute;
+		top: 38%;
+	}
+	#skip{
+		position: fixed;
+		top: 91%;
+		left: 86%;
+		transform: scale(2.5);
+	}
+}
+
+@media screen and (max-width:824px){
+	.theBlock{
+		height: 45%;
+	}
+	.ex1{
+		transform: scale3d(2,2,2);
+	}
+	#page_2 .text_1, #page_3 .text_1, #page_4 .text_1, #page_5 .text_1{
+		font-size: 1em;
+		position: absolute;
+		top: 45%;
+	}
+	#skip{
+		position: fixed;
+		top: 90%;
+		left: 90%;
+		transform: scale(1);
+	}
+}
+
+/*Iphone 12 Pro*/
+@media screen and (max-width:500px){
+	.theBlock{
+		height: 60%;
+	}
+	.ex1{
+		transform: scale3d(2.5,2.5,2.5);
+	}
+	#page_2 .text_1, #page_3 .text_1, #page_4 .text_1, #page_5 .text_1{
+		font-size: 1em;
+		position: absolute;
+		top: 40%;
+	}
+	#skip{
+		position: fixed;
+		top: 90%;
+		left: 80%;
+		transform: scale(1.5);
+	}
+}

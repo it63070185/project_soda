@@ -154,7 +154,7 @@
     transform: rotateY(25deg);
     transform-origin: center left;
     transition: 0.8s;
-    fill: blue;
+    fill: white;
   }
   .img1{
     position: absolute;

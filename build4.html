@@ -29,7 +29,7 @@
                     <div onclick="pic1(3)" class="cur_pic pic3 left_pic3"><img src="/image/buildtext4/04.png" alt="build" width="100%" height="100%"></div>
                     <div onclick="pic1(4)" class="cur_pic pic4 left_pic4"><img src="/image/buildtext4/02.png" alt="build" width="100%" height="100%"></div>
                     
-                    <div onclick="hum2()" class="human_side human"><img src="/image/human/1x/1.png" alt="human" width="100%" height="100%"></div>
+                    <div onclick="hum2()" class="human_side human"><img src="/image/humanALL/human1.png" alt="human" width="100%" height="100%"></div>
                     <div class="floor bottom_floor"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
                     <div class="floor1 bottom_floor2"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
                     <div class="longfloor bottom_floor3"><img src="/image/texture.jpg" alt="build" width="100%" height="100%"></div>
@@ -157,8 +157,7 @@
 		data:{
 			active_tab:0,
 			pic:`/image/buildtext4/scala1.png`,
-			scale1:"transform:scale3d(0.8,0.8,0.8) translateX(1em)",
-            move1:"rotateX(2deg) rotateY(306deg) rotateZ(360deg) translateY(1em) translateX(4.5em) translateZ(-2em)",
+            move1:"rotateX(3deg) rotateY(340deg) rotateZ(0deg) translateY(2em) translateX(2.5em) translateZ(1em)",
 			tabs:[
 			{
 				id:0,
@@ -176,16 +175,13 @@
 				this.active_tab = x;
 				if(x == 0){
 					this.pic = `/image/buildtext4/scala1.png`;
-					this.scale1 = "transform:scale3d(0.8,0.8,0.8) translateX(1em)"
-                    this.move1 ="rotateX(2deg) rotateY(306deg) rotateZ(360deg) translateY(1em) translateX(4.5em) translateZ(-2em)"
+                    this.move1 ="rotateX(3deg) rotateY(340deg) rotateZ(0deg) translateY(2em) translateX(2.5em) translateZ(1em)"
 				}else if(x == 1){
 					this.pic = `/image/buildtext4/scala2.png`;
-					this.scale1 = "transform:scale3d(2,2,2) translateX(1em)"
-                    this.move1 ="rotateX(5deg) rotateY(320deg) rotateZ(0deg) translateY(1.5em) translateX(6.8em) translateZ(8em)"
+                    this.move1 ="rotateX(3deg) rotateY(320deg) rotateZ(0deg) translateY(2em) translateX(7.5em) translateZ(5em)"
 				}else if(x == 2){
 					this.pic = `/image/buildtext4/scala3.png`;
-					this.scale1 = "transform:scale3d(2,2,2) translateX(1em)"
-                    this.move1 ="rotateX(6deg) rotateY(340deg) rotateZ(0deg) translateY(1.5em) translateX(2.8em) translateZ(2em)"
+                    this.move1 ="rotateX(6deg) rotateY(350deg) rotateZ(0deg) translateY(2.5em) translateX(2.8em) translateZ(4em)"
 				}
 			}
 		}

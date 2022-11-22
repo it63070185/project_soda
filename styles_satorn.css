@@ -19,13 +19,19 @@
   .door_in{
     cursor:url('/image/go.png'),auto;
   }
-  
+  @keyframes up_down1{
+    0%{top: 1%;}
+    100%{top: -1%;}
+  }
+  @keyframes up_down2{
+    0%{top: -1%;}
+    100%{top: 3%;}
+  }
   .side {
     position: absolute;
     width: 2em;
     height: 2em;
     background: rgba(100,100,100);
-    border: 1px solid ;
     text-align: center;
   }
   .side1 {
@@ -33,7 +39,7 @@
     width: 3em;
     height: 5em;
     background: rgba(100,100,100);
-    border: 1px solid ;
+
     text-align: center;
   }
   .side2 {
@@ -41,7 +47,7 @@
     width: 6.5em;
     height: 3em;
     background: rgba(100,100,100);
-    border: 1px solid ;
+
     text-align: center;
   }
   .floor {
@@ -49,7 +55,7 @@
     width: 2.8em;
     height: 3.2em;
     background: rgba(100,100,100);
-    border: 1px solid ;
+
     text-align: center;
   }
   .floor1 {
@@ -57,7 +63,7 @@
       width: 2.8em;
       height: 4.5em;
       background: rgba(100,100,100);
-      border: 1px solid ;
+
       text-align: center;
   }
   .longfloor {
@@ -65,7 +71,7 @@
       width: 1em;
       height: 6em;
       background: rgba(100,100,100);
-      border: 1px solid ;
+
       text-align: center;
   }
   .sky {
@@ -73,7 +79,7 @@
       width: 5em;
       height: 3.5em;
       background: rgba(100,100,100);
-      border: 1px solid ;
+
       text-align: center;
   }
   .sky2 {
@@ -82,7 +88,7 @@
       height: 0.6em;
       background: url(image/sky.jpg);
       background-position: left bottom;
-      border: 1px solid ;
+
       text-align: center;
   }
   .ceiling {
@@ -90,7 +96,7 @@
     width: 0.8em;
     height: 2em;
     background: rgba(100,100,100);
-    border: 1px solid ;
+
     text-align: center;
   }
   .pic {
@@ -98,7 +104,7 @@
     width: 2em;
     height: 3em;
     background: rgba(100,100,100);
-    border: 1px solid ;
+    animation: up_down2 1.8s alternate infinite;
     text-align: center;
     line-height: 2em;
   }
@@ -107,7 +113,7 @@
       width: 4.5em;
       height: 2.5em;
       background: rgba(100,100,100);
-      border: 1px solid ;
+      animation: up_down1 1.8s alternate infinite;
       text-align: center;
   }
   .pic3{
@@ -115,7 +121,7 @@
       width: 3.5em;
       height: 2.2em;
       background: rgba(100,100,100);
-      border: 1px solid ;
+      animation: up_down2 1.5s alternate infinite;
       text-align: center;
   }
   .pic4{
@@ -123,7 +129,7 @@
       width: 5em;
       height: 3em;
       background: rgba(100,100,100);
-      border: 1px solid ;
+      animation: up_down1 1.5s alternate infinite;
       text-align: center;
   }
   .door_side{
@@ -131,7 +137,7 @@
       width: 0.9em;
       height: 1.8em;
       background: rgba(100,100,100);
-      border: 1px solid ;
+
       text-align: center;
       line-height: 2em;
   }
@@ -204,7 +210,6 @@
     height: 6em;
     background: url(image/texture.jpg);
     background-position: top;
-    border: 1px solid ;
     text-align: center;
     line-height: 2em;
   }
@@ -214,7 +219,6 @@
     height: 1em;
     background: url(image/texture.jpg);
     background-position: bottom left;
-    border: 1px solid ;
     text-align: center;
     line-height: 2em;
   }
@@ -224,7 +228,6 @@
     height: 1em;
     background: url(image/texture.jpg);
     background-position: top left;
-    border: 1px solid ;
     text-align: center;
     line-height: 2em;
   }
@@ -308,7 +311,7 @@
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -450px;
+    top: -480px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -319,8 +322,8 @@
   .intext2{
     position: relative;
     font-size: 1em;
-    left: 0.2vw;
-    top: -450px;
+    left: 0vw;
+    top: -480px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -332,7 +335,7 @@
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -490px;
+    top: -510px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -343,8 +346,8 @@
   .intext4{
     position: relative;
     font-size: 1em;
-    left: -0.2vw;
-    top: -490px;
+    left: -1vw;
+    top: -510px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -356,7 +359,7 @@
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -520px;
+    top: -540px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -364,15 +367,192 @@
     opacity: 0;
     visibility: hidden;
   }
+  .item2 img{
+    margin-top: 5%;
+    width: 420px;
+    height: 75vh;
+    transition: 0.5s  ease;
+  }
   @media only screen and (max-width: 1024px){
     .ex1 {
-      perspective: 1200px;
+      perspective: 1500px;
       top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale3d(0.6,0.6,0.6);
+      position: absolute;
+    
+    }
+    
+    .img1{
+      position: absolute;
+      width: 600px;
+      height: 500px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img3{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img4{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 600px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img5{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img6{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img7{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 420px;
+      height: 300px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .close_but{
+      position: absolute;
+      top: -11%;
+      left: 95%;
+     
+    }
+    .item2 img{
+      margin-top: 5%;
+      width: 600px;
+      height: 80vh;
+      transition: 0.5s  ease;
+    }
+    .intext1{
+      position: relative;
+      font-size: 1.4em;
+      left: 25vw;
+      top: 70vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext2{
+      position: relative;
+      font-size: 1.4em;
+      left: -30vw;
+      top: 70vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 1.4em;
+      left: 25vw;
+      top: 65vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 1.4em;
+      left: -1vw;
+      left: -30vw;
+      top: 65vh;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 1.4em;
+      left: 25vw;
+      top: 60vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 824px){
+    .ex1 {
+      perspective: 1500px;
+      top: 30%;
       left: 50%;
       transform: translate(-50%, -50%) scale3d(0.5,0.5,0.5);
       position: absolute;
     
     }
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: translateX(-480px ) translateY(220px );
+    }
+    #menuToggle input:checked ~ ul
+  {
+	  transform: translate(-75%, -5%);
+	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
     .img1{
       position: absolute;
       width: 600px;
@@ -445,5 +625,242 @@
       left: 95%;
      
     }
+    .item2 img{
+      margin-top: 5%;
+      width: 430px;
+      height: 80vh;
+      transition: 0.5s  ease;
+    }
+    .intext1{
+      position: relative;
+      font-size: 1.1em;
+      left: 25vw;
+      top: 65vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext2{
+      position: relative;
+      font-size: 1.1em;
+      left: -30vw;
+      top: 65vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 1.1em;
+      left: 25vw;
+      top: 60vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 1.1em;
+      left: -1vw;
+      left: -30vw;
+      top: 60vh;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 1.1em;
+      left: 25vw;
+      top: 55vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 
+
+  @media only screen and (max-width: 500px){
+    .ex1 {
+      perspective: 1500px;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale3d(0.3,0.3,0.3);
+      position: absolute;
+    
+    }
+    
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: translateX(-350px ) translateY(225px );
+    }
+    #menuToggle input:checked ~ ul
+    {
+	  transform: translate(-66%, -5%);
+	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    .img1{
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img3{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img4{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 300px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img5{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img6{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img7{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .close_but{
+      position: absolute;
+      top: -11%;
+      left: 95%;
+     
+    }
+    .item2 img{
+      margin-top: 5%;
+      width: 330px;
+      height: 80vh;
+      transition: 0.5s  ease;
+    }
+    .intext1{
+      position: relative;
+      font-size: 0.7em;
+      left: 25vw;
+      top: 65vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext2{
+      position: relative;
+      font-size: 0.7em;
+      left: -30vw;
+      top: 65vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 0.7em;
+      left: 25vw;
+      top: 60vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 0.7em;
+      left: -1vw;
+      left: -30vw;
+      top: 60vh;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 0.7em;
+      left: 25vw;
+      top: 55vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }

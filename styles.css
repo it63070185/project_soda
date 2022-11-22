@@ -279,16 +279,11 @@ model-viewer {
 	z-index:100;
 	transition: 0.5s  ease;
 }
-.item2 img{
-	margin-top: 5%;
-	width: 450px;
-	height: 75vh;
-	transition: 0.5s  ease;
-}
+
 
 .all_tabs{
 	display: flex;
-	transform: translateX(60%) ;
+	transform: translateX(58%) ;
 
 }
 .tab_item{
@@ -300,7 +295,7 @@ model-viewer {
 }
 .tab_item[active]{
 	background: rgb(255, 255, 255);
-	border: 1px rgb(99, 99, 99) solid;
+	border: 1px rgb(255, 255, 255) solid;
 }
 
 .content{
@@ -311,9 +306,14 @@ model-viewer {
     transform: rotateY(25deg);
     transform-origin: center left;
     transition: 0.8s;
-    fill: blue;
+    fill: white;
   }
+  .dor2:hover{
+    transform: rotateY(25deg);
+    transform-origin: center left;
+    transition: 0.8s;
 
+  }
 
 .desk{
 	visibility: visible;
@@ -335,11 +335,6 @@ model-viewer {
   -webkit-user-select: none;
   user-select: none;
 }
-
-
-
-
-
 
 #menuToggle input
 {
@@ -385,8 +380,10 @@ model-viewer {
 #menuToggle input:checked ~ span
 {
   opacity: 1;
-  transform: translateX(-600px ) translateY(310px );
-  background: #fff;
+  transform: translateX(-650px ) translateY(310px );
+  background: url(image/quit.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -414,12 +411,38 @@ model-viewer {
 
 #menuToggle input:checked ~ ul
 {
-	transform: translate(-100%, 0);
+	transform: translate(-110%, 0);
 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 
 @media only screen and (max-width: 1024px){
+	#skip{
+		position: fixed;
+		top: 95%;
+		  left: 94%;
+		z-index: 4;
+	}
+	.text_1{
+		font-size: 1.2em;
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		  position: absolute;
+		  top: 90%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+	}
+	.door_home{
+		position: absolute;
+		  top: 80%;
+		  left: 52%;
+		  transform: translate(-50%, -50%);
+		width: 15%;
+		height: 15%;
+		cursor: pointer;
+		
+	}
 	.roll {
 		transform: rotate(90deg) translateY(18em);
 		
@@ -457,19 +480,39 @@ model-viewer {
 }
 
 @media only screen and (max-width: 824px){
+	#skip{
+		position: fixed;
+		top: 95%;
+		  left: 94%;
+		z-index: 4;
+	}
+	.text_1{
+		font-size: 1.2em;
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		  position: absolute;
+		  top: 90%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+	}
+	.door_home{
+		position: absolute;
+		  top: 75%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		width: 15%;
+		height: 15%;
+		cursor: pointer;
+		
+	}
 	.roll {
-		transform: rotate(90deg) translateY(15em);
+		transform: rotate(90deg) translateY(18em);
 		
 	}
 	.all_tabs{
 		display: flex;
 		transform: translateX(58%) ;
-	}
-	.item2 img{
-		margin-top: 5%;
-		width: 500px;
-		height: 80vh;
-		transition: 0.5s  ease;
 	}
 	.item2 {
 		z-index:100;
@@ -479,19 +522,61 @@ model-viewer {
 	#menuToggle input:checked ~ span
 	{
 	opacity: 1;
-	transform: translateX(-615px ) translateY(270px );
-	background: #fff;
+	transform: translateX(-505px ) translateY(270px );
 	}
+	#menuToggle
+	{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	
+	z-index: 1000;
+	
+	-webkit-user-select: none;
+	user-select: none;
+	}
+	#menuToggle input:checked ~ ul
+{
+	transform: translate(-80%, -5%);
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
 }
 
 @media only screen and (max-width: 500px){
+	#skip{
+		position: fixed;
+		top: 95%;
+		  left: 90%;
+		z-index: 4;
+	}
+	.text_1{
+		font-size: 1.2em;
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		  position: absolute;
+		  top: 95%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+	}
+	.door_home{
+		position: absolute;
+		  top: 75%;
+		  left: 45%;
+		  transform: translate(-50%, -50%);
+		width: 15%;
+		height: 15%;
+		cursor: pointer;
+		
+	}
 	.roll {
-		transform: rotate(90deg) translateY(11.2em);
+		transform: rotate(90deg) translateY(12.5em);
 		
 	}
 	.all_tabs{
 		display: flex;
-		transform: translateX(65%) ;
+		transform: translateX(58%) ;
 	}
 	.item2 img{
 		margin-top: 5%;
@@ -513,7 +598,24 @@ model-viewer {
 	#menuToggle input:checked ~ span
 	{
 	opacity: 1;
-	transform: translateX(-350px ) translateY(250px );
-	background: #fff;
+	transform: translateX(-345px ) translateY(230px );
+
 	}
+	#menuToggle
+	{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	
+	z-index: 1000;
+	
+	-webkit-user-select: none;
+	user-select: none;
+	}
+	#menuToggle input:checked ~ ul
+{
+	transform: translate(-65%, -5%);
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
 }

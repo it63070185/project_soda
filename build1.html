@@ -94,64 +94,7 @@
 						<div class="sideT_B bottom"></div>
 					</div>
 					  </div>
-					  <div class="stair_all">
-						<div class="stair1">
-							<div class="sideT_B top"></div> 
-							<div class="sideF_B front"></div>
-							<div class="sideF_B back2"></div>
-							<div class="sideL_R right"></div>
-							<div class="sideL_R left"></div>
-							<div class="sideT_B bottom"></div>
-						</div>
-						<div class="stair2">
-							<div class="sideT_B top"></div> 
-							<div class="sideF_B front"></div>
-							<div class="sideF_B back2"></div>
-							<div class="sideL_R right"></div>
-							<div class="sideL_R left"></div>
-							<div class="sideT_B bottom"></div>
-						</div>
-						<div class="stair3">
-							<div class="sideT_B top"></div> 
-							<div class="sideF_B front"></div>
-							<div class="sideF_B back2"></div>
-							<div class="sideL_R right"></div>
-							<div class="sideL_R left"></div>
-							<div class="sideT_B bottom"></div>
-						</div>
-						<div class="stair4">
-							<div class="sideT_B top"></div> 
-							<div class="sideF_B front"></div>
-							<div class="sideF_B back2"></div>
-							<div class="sideL_R right"></div>
-							<div class="sideL_R left"></div>
-							<div class="sideT_B bottom"></div>
-						</div>
-						<div class="stair5">
-							<div class="sideT_B top"></div> 
-							<div class="sideF_B front"></div>
-							<div class="sideF_B back2"></div>
-							<div class="sideL_R right"></div>
-							<div class="sideL_R left"></div>
-							<div class="sideT_B bottom"></div>
-						</div>
-						<div class="stair6">
-							<div class="sideT_B top"></div> 
-							<div class="sideF_B front"></div>
-							<div class="sideF_B back2"></div>
-							<div class="sideL_R right"></div>
-							<div class="sideL_R left"></div>
-							<div class="sideT_B bottom"></div>
-						</div>
-						<div class="stair7">
-							<div class="sideT_B top"></div> 
-							<div class="sideF_B front"></div>
-							<div class="sideF_B back2"></div>
-							<div class="sideL_R right"></div>
-							<div class="sideL_R left"></div>
-							<div class="sideT_B bottom"></div>
-						</div>
-						  </div>
+					  
 						  <div class="stair_all1">
 					<div class="stair1">
 						<div class="sideT_B top"></div> 
@@ -268,7 +211,7 @@
 							<div class="sideT_B bottom"></div>
 						</div>
 						  </div>
-					<div onclick="hum2()" class="human_side back5"><img src="/image/human/1x/1.png" alt="human" width="100%" height="100%"></div>
+					<div onclick="hum2()" class="human_side back5"><img src="/image/humanALL/human7.png" alt="human" width="100%" height="100%"></div>
 					<svg class="door"> viewBox="0 0 100 100">
 
 						<path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
@@ -322,7 +265,7 @@
 			<div onclick="change_text2()" class="intext2"> ถึงจะเป็นที่เก่าแก่ แต่กลับออกแบบได้ so ทันสมัยสุดๆ <br>ตอน I เข้าไปนึกว่าได้กลับบ้านแน่ะ!</div>
 			<div onclick="change_text3()" class="intext3"> แต่ถ้า you คิดว่าสถาปัตยกรรมมีไว้เพื่อความสวยงาม <br>ที่นี่จะหักล้างความเชื่อนั้นได้เลย</div>
 			<div onclick="change_text4()" class="intext4"> ไม่ใช่เพียงเพื่อความบันเทิง <br>แต่ประโยชน์ในฐานะสถานราชการก็ถูกใช้อย่างคุ้มค่า แบบนั้นฟังดูดีไหม?</div>
-			<div onclick="close_text()" class="intext5"> OH! My Lord!! ใครจะไปคิดว่ามันว่าในอนาคตคนจะมารีโนเวทมัน <br>แบบนี้ก็เจ๋งจ๊าบเลยน่ะซี!</div>
+			<div onclick="close_text()" class="intext5"> OH! My Lord!! ใครจะไปคิดว่ามันว่าในอนาคตคนจะมารีโนเวท<br>มันแบบนี้ก็เจ๋งจ๊าบเลยน่ะซี!</div>
 			<div class="item2 mob">
 				<nav role="navigation">
 					<div id="menuToggle">
@@ -403,7 +346,7 @@
 		el:'#app',
 		data:{
 			active_tab:0,
-			pic:`/image/buildtext2/1.png`,
+			pic:`/image/buildtext1/Customs1.png`,
             move1:"rotateX(0deg) rotateY(308deg) rotateZ(0deg) translateY(-3em) translateX(8.5em) translateZ(4em)",
 			tabs:[
 			{
@@ -421,13 +364,13 @@
 			changeTabs (x) {
 				this.active_tab = x;
 				if(x == 0){
-					this.pic = `/image/buildtext2/1.png`;
+					this.pic = `/image/buildtext1/Customs1.png`;
                     this.move1 ="rotateX(0deg) rotateY(308deg) rotateZ(0deg) translateY(-3em) translateX(8.5em) translateZ(4em)"
 				}else if(x == 1){
-					this.pic = `/image/buildtext2/2.png`;
+					this.pic = `/image/buildtext1/Customs2.png`;
                     this.move1 ="rotateX(0deg) rotateY(359deg) rotateZ(0deg) translateY(-2em) translateX(-4.5em) translateZ(12em)"
 				}else if(x == 2){
-					this.pic = `/image/buildtext2/3.png`;
+					this.pic = `/image/buildtext1/Customs3.png`;
                     this.move1 ="rotateX(6deg) rotateY(300deg) rotateZ(0deg) translateY(-1em) translateX(-0.2em) translateZ(-1em)"
 				}
 			}

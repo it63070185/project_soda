@@ -20,13 +20,20 @@
     transition: 0.5s  ease;
   
   }
-  
+  @keyframes up_down1{
+    0%{top: 1%;}
+    100%{top: -1%;}
+  }
+  @keyframes up_down2{
+    0%{top: -1%;}
+    100%{top: 3%;}
+  }
   .side1 {
     position: absolute;
     width: 2.5em;
     height: 1.5em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
+    animation: up_down1 1.5s alternate infinite;
     text-align: center;
     line-height: 2em;
   }
@@ -36,7 +43,7 @@
     width: 1.5em;
     height: 2em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
+    animation: up_down2 1.5s alternate infinite;
     text-align: center;
     line-height: 2em;
   }
@@ -51,9 +58,10 @@
   .side3 {
     position: absolute;
     width: 3em;
+    animation: up_down2 1.2s alternate infinite;
     height: 2em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -62,7 +70,6 @@
     width: 10em;
     height: 7em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
     text-align: center;
     line-height: 2em;
   }
@@ -71,7 +78,7 @@
     width: 3em;
     height: 3em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -80,7 +87,7 @@
     width: 1.6em;
     height: 2.8em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
+    animation: up_down1 1s alternate infinite;
     text-align: center;
     line-height: 2em;
   }
@@ -89,7 +96,7 @@
     width: 5em;
     height: 3em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
+    animation: up_down2 1s alternate infinite;
     text-align: center;
     line-height: 2em;
   }
@@ -98,7 +105,7 @@
     width: 4em;
     height: 2.8em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
+    animation: up_down1 1.8s alternate infinite;
     text-align: center;
     line-height: 2em;
   }
@@ -107,7 +114,7 @@
     width: 8em;
     height: 5em;
     background: rgba(100,100,100,0.5);
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -196,7 +203,7 @@
     height: 6em;
     background: url(image/texture.jpg);
     background-position: top;
-    border: 1px solid ;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -206,7 +213,7 @@
     height: 1em;
     background: url(image/texture.jpg);
     background-position: bottom left;
-    border: 1px solid ;
+
     text-align: center;
     line-height: 2em;
   }
@@ -216,7 +223,7 @@
     height: 1em;
     background: url(image/texture.jpg);
     background-position: top left;
-    border: 1px solid ;
+
     text-align: center;
     line-height: 2em;
   }
@@ -358,7 +365,7 @@
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -380px;
+    top: -480px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -369,8 +376,8 @@
   .intext2{
     position: relative;
     font-size: 1em;
-    left: 1vw;
-    top: -380px;
+    left: 0vw;
+    top: -480px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -382,7 +389,7 @@
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -430px;
+    top: -530px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -394,7 +401,7 @@
     position: relative;
     font-size: 1em;
     left: -1vw;
-    top: -430px;
+    top: -530px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -406,7 +413,7 @@
     position: relative;
     font-size: 1em;
     left: 55vw;
-    top: -460px;
+    top: -580px;
     width: 90%;
     height: 90%;
     z-index: 100;
@@ -414,16 +421,184 @@
     opacity: 0;
     visibility: hidden;
   }
+  .item2 img{
+    margin-top: 5%;
+    width: 420px;
+    height: 75vh;
+    transition: 0.5s  ease;
+  }
 
   @media only screen and (max-width: 1024px){
     .ex1 {
       perspective: 1200px;
-      top: 40%;
+      top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) scale3d(0.5,0.5,0.5);
+      transform: translate(-50%, -50%) scale3d(0.7,0.7,0.7);
       position: absolute;
     
     }
+    
+    .img1{
+      position: absolute;
+      width: 600px;
+      height: 500px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img3{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img4{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 600px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img5{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img6{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img7{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 420px;
+      height: 300px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .close_but{
+      position: absolute;
+      top: -11%;
+      left: 95%;
+     
+    }
+    .item2 img{
+      margin-top: 5%;
+      width: 520px;
+      height: 85vh;
+      transition: 0.5s  ease;
+    }
+    .intext1{
+      position: relative;
+      font-size: 1.4em;
+      left: 25vw;
+      top: 70vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext2{
+      position: relative;
+      font-size: 1.4em;
+      left: -30vw;
+      top: 70vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 1.4em;
+      left: 25vw;
+      top: 65vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 1.4em;
+      left: -1vw;
+      left: -30vw;
+      top: 65vh;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 1.4em;
+      left: 25vw;
+      top: 55vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 824px){
+    .ex1 {
+      perspective: 1200px;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale3d(0.6,0.6,0.6);
+      position: absolute;
+    
+    }
+    
     .img1{
       position: absolute;
       width: 600px;
@@ -495,5 +670,233 @@
       top: -11%;
       left: 95%;
      
+    }
+    .item2 img{
+      margin-top: 5%;
+      width: 480px;
+      height: 85vh;
+      transition: 0.5s  ease;
+    }
+    .intext1{
+      position: relative;
+      font-size: 1.1em;
+      left: 25vw;
+      top: 60vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext2{
+      position: relative;
+      font-size: 1.1em;
+      left: -30vw;
+      top: 60vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 1.1em;
+      left: 25vw;
+      top: 55vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 1.1em;
+      left: -1vw;
+      left: -30vw;
+      top: 55vh;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 1.1em;
+      left: 25vw;
+      top: 45vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px){
+    .ex1 {
+      perspective: 1200px;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale3d(0.3,0.3,0.3);
+      position: absolute;
+    
+    }
+    
+    .img1{
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img3{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img4{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 300px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img5{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img6{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .img7{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 200px;
+      z-index: 102;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .close_but{
+      position: absolute;
+      top: -11%;
+      left: 95%;
+     
+    }
+    .item2 img{
+      margin-top: 5%;
+      width: 320px;
+      height: 85vh;
+      transition: 0.5s  ease;
+    }
+    .intext1{
+      position: relative;
+      font-size: 0.7em;
+      left: 25vw;
+      top: 55vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext2{
+      position: relative;
+      font-size: 0.7em;
+      left: -30vw;
+      top: 55vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 0.7em;
+      left: 25vw;
+      top: 50vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 0.7em;
+      left: -1vw;
+      left: -30vw;
+      top: 50vh;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 0.7em;
+      left: 25vw;
+      top: 45vh;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
     }
   }

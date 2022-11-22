@@ -1,10 +1,22 @@
 .ex1 {
     perspective: 2500px;
-    transform:scale3d(1,1,1) ;
+    transform:scale3d(1.2,1.2,1.2) translateX(0em) translateY(10em);
   
   }
   
-  #door2{
+  .door2{
+    cursor:url('/image/go.png'),auto;
+  }
+  .door1{
+    cursor:url('/image/go.png'),auto;
+  }
+  .door3{
+    cursor:url('/image/go.png'),auto;
+  }
+  .door4{
+    cursor:url('/image/go.png'),auto;
+  }
+  .door5{
     cursor:url('/image/go.png'),auto;
   }
   .cube {
@@ -22,7 +34,7 @@
     width: 2em;
     height: 2em;
     background: gray;
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -31,7 +43,7 @@
     width: 3em;
     height: 5em;
     background: gray;
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -40,7 +52,7 @@
     width: 7em;
     height: 3em;
     background: gray;
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -49,7 +61,7 @@
     width: 2em;
     height: 5em;
     background: gray;
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -58,7 +70,7 @@
     width: 3em;
     height: 5.5em;
     background: gray;
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -67,7 +79,7 @@
     width: 3em;
     height: 3.5em;
     background: gray;
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -76,7 +88,7 @@
     width: 1.5em;
     height: 4.5em;
     background: gray;
-    border: 1px solid white;
+    
     text-align: center;
     line-height: 2em;
   }
@@ -85,7 +97,7 @@
     width: 3em;
     height: 1.5em;
     background: gray;
-    border: 1px solid white;
+
     text-align: center;
     line-height: 2em;
   }
@@ -94,7 +106,6 @@
     width: 5em;
     height: 2em;
     background: gray;
-    border: 1px solid white;
     text-align: center;
     line-height: 2em;
   }
@@ -102,8 +113,8 @@
     position: absolute;
     width: 5em;
     height: 1em;
-    background: gray;
-    border: 1px solid white;
+    background: url(image/sky.jpg);
+   
     text-align: center;
     line-height: 2em;
   }
@@ -112,10 +123,72 @@
     width: 5em;
     height: 4em;
     background: gray;
-    border: 1px solid white;
     text-align: center;
     line-height: 2em;
   }
+  .stair_all{
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) scale3d(0.5,1,0.8) translate3d(6.3em,-1.9em,-00em);
+  }
+  .stair_all1{
+    transform-style: preserve-3d;
+    transform: rotateY(90deg) scale3d(0.5,0.8,0.8) translate3d(-5.7em,-3.3em,-0.5em);
+  }
+  .stair1 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-7.5em) translateX(-4em) scale3d(0.3,0.3,0.5);
+  }
+  .stair2 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-7.2em) translateX(-3.7em) scale3d(0.3,0.3,0.5);
+  }
+  .stair3 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.9em) translateX(-3.4em) scale3d(0.3,0.3,0.5);
+  }
+  .stair4 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.6em) translateX(-3.1em) scale3d(0.3,0.3,0.5);
+  }
+  .stair5 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6.3em) translateX(-2.8em) scale3d(0.3,0.3,0.5);
+  }
+  .stair6 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-6em) translateX(-2.5em) scale3d(0.3,0.3,0.5);
+  }
+  .stair7 {
+    font-size: 1em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-4.6em) translateY(-5.7em) translateX(-2.2em) scale3d(0.3,0.3,0.5);
+  }
+  .front {transform: translateZ(3em) translateY(3em) translateX(0em);}
+   .top {transform: rotateX(90deg) translateZ(0em) translateY(0em) translateX(0em);}
+   .right {transform: rotateY(90deg) translateZ(-1.5em) translateY(3em) translateX(0em);}
+   .left {transform: rotateY(-90deg) translateZ(3em) translateY(3em) translateX(0em);}
+   .bottom {transform: rotateX(-90deg) translateZ(1em) translateY(0em) translateX(0em);}
+   .back3 {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
   
   .front1 {transform: translateZ(1em);}
   .top1 {transform: rotateX(90deg) translateZ(4.5em) translateY(1em) translateX(2.5em);}
@@ -142,83 +215,15 @@
     transform: rotateY(-180deg) translateZ(-2.8em) translateY(-5.1em) translateX(-4em);}
   .door5 {transform: rotateY(-90deg) translateZ(-2.2em) translateY(-8em) translateX(6em);}
   
-  .stair1 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.3em) translateX(-1em) scale3d(0.08,0.08,0.055);
-  }
-  .stair2 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.35em) translateX(-0.95em) scale3d(0.08,0.08,0.055);
-  }
-  .stair3 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.4em) translateX(-0.9em) scale3d(0.08,0.08,0.055);
-  }
-  .stair4 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.45em) translateX(-0.85em) scale3d(0.08,0.08,0.055);
-  }
-  .stair5 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.5em) translateX(-0.8em) scale3d(0.08,0.08,0.055);
-  }
-  .stair6 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.55em) translateX(-0.75em) scale3d(0.08,0.08,0.055);
-  }
-  .stair7 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.6em) translateX(-0.7em) scale3d(0.08,0.08,0.055);
-  }
-  .stair8 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.65em) translateX(-0.65em) scale3d(0.08,0.08,0.055);
-  }
-  .stair9 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.7em) translateX(-0.6em) scale3d(0.08,0.08,0.055);
-  }
-  .stair10 {
-    font-size: 4em;
-    width: 2em;
-    margin: 1.5em auto;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(270deg)  rotateZ(180deg) translateZ(-0.6em) translateY(3.75em) translateX(-0.55em) scale3d(0.08,0.08,0.055);
-  }
   
-   .sideT_B {
+  
+  .sideT_B {
     position: absolute;
     width: 1.5em;
     height: 6em;
-    background: gray;
-    border: 1px solid white;
+    background: url(image/texture.jpg);
+    background-position: top;
+
     text-align: center;
     line-height: 2em;
   }
@@ -226,8 +231,9 @@
     position: absolute;
     width: 6em;
     height: 1em;
-    background: gray;
-    border: 1px solid white;
+    background: url(image/texture.jpg);
+    background-position: bottom left;
+
     text-align: center;
     line-height: 2em;
   }
@@ -235,8 +241,9 @@
     position: absolute;
     width: 1.5em;
     height: 1em;
-    background: gray;
-    border: 1px solid white;
+    background: url(image/texture.jpg);
+    background-position: top left;
+
     text-align: center;
     line-height: 2em;
   }
@@ -248,7 +255,66 @@
    .bottom {transform: rotateX(-90deg) translateZ(1em) translateY(0em) translateX(0em);}
    .back {transform: rotateY(-180deg) translateZ(3em) translateY(3em) translateX(0em);}
 
-
+   .intext1{
+    position: relative;
+    font-size: 1.2em;
+    left: 50vw;
+    top: -800px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  .intext2{
+    position: relative;
+    font-size: 1.2em;
+    left: -5vw;
+    top: -800px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .intext3{
+    position: relative;
+    font-size: 1.2em;
+    left: 50vw;
+    top: -830px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .intext4{
+    position: relative;
+    font-size: 1.2em;
+    left: -5vw;
+    top: -825px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .intext5{
+    position: relative;
+    font-size: 1.2em;
+    left: 50vw;
+    top: -880px;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    cursor: url(/image/talk1.png)32 32,auto;
+    opacity: 0;
+    visibility: hidden;
+  }
   .item2{
     font-size: 1em;
     width: 100%;
@@ -259,12 +325,222 @@
     cursor: url(/image/skip.png),auto;
     background-color: black;
   }
-  .area{
-    position: absolute;
 
-  	top: 45%;
-  	left: 75%;
-  	transform: translate(-50%, -50%);
+
+  @media only screen and (max-width: 1024px){
+    .ex1 {
+      perspective: 2500px;
+      top: 70%;
+      left: 40%;
+      transform: translate(-50%, -50%) scale3d(1.1,1.1,1.1);
+      position: absolute;
+    
+    }
+    
+    .intext1{
+      position: relative;
+      font-size: 1.3em;
+      left: 25vw;
+      top: 900px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 1;
+      visibility: visible;
+    }
+    .intext2{
+      position: relative;
+      font-size: 1.2em;
+      left: -30vw;
+      top: 900px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 1.2em;
+      left: 25vw;
+      top: 860px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 1.17em;
+      left: -30vw;
+      top: 860px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 1.2em;
+      left: 25vw;
+      top: 800px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
+  @media only screen and (max-width: 824px){
+    .ex1 {
+      perspective: 2500px;
+      top: 60%;
+      left: 40%;
+      transform: translate(-50%, -50%) scale3d(0.9,0.9,0.9);
+      position: absolute;
+    
+    }
+    
+    .intext1{
+      position: relative;
+      font-size: 1.3em;
+      left: 25vw;
+      top: 500px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 1;
+      visibility: visible;
+    }
+    .intext2{
+      position: relative;
+      font-size: 1.2em;
+      left: -30vw;
+      top: 500px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 1.2em;
+      left: 25vw;
+      top: 420px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 1.17em;
+      left: -30vw;
+      top: 400px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 1.2em;
+      left: 25vw;
+      top: 300px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    .ex1 {
+      perspective: 2500px;
+      top: 60%;
+      left: 30%;
+      transform: translate(-50%, -50%) scale3d(0.6,0.6,0.6);
+      position: absolute;
+    
+    }
+    
+    .intext1{
+      position: relative;
+      font-size: 0.8em;
+      left: 25vw;
+      top: 400px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 1;
+      visibility: visible;
+    }
+    .intext2{
+      position: relative;
+      font-size: 0.8em;
+      left: -30vw;
+      top: 400px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext3{
+      position: relative;
+      font-size: 0.6em;
+      left: 25vw;
+      top: 360px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext4{
+      position: relative;
+      font-size: 0.8em;
+      left: -30vw;
+      top: 360px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intext5{
+      position: relative;
+      font-size: 0.8em;
+      left: 25vw;
+      top: 280px;
+      width: 90%;
+      height: 90%;
+      z-index: 100;
+      cursor: url(/image/talk1.png)32 32,auto;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
 
   

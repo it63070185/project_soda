@@ -314,7 +314,9 @@ model-viewer {
     transition: 0.8s;
 
   }
-
+.open{
+	fill:white;
+}
 .desk{
 	visibility: visible;
 	opacity: 1;

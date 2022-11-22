@@ -156,7 +156,7 @@
 				<svg class="door1">viewBox="0 0 100 100">
 				  <path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
 				  </path>
-				  <path onclick="go_build1()" class="dor" stroke="#606060" stroke-width="1" fill="#606060"
+				  <path onclick="go_build1()" class="dor" id="doo"stroke="#606060" stroke-width="1" fill="#606060"
 					  d="M31.5 90 H31.5 V50 Q31.5 21.5, 50 21.5 Q68.5 21.5, 68.5 50 V68.5 90 68.5 89.5 H31 68.5 ">
 				  </path>
 			  </svg>
@@ -164,7 +164,7 @@
 			  <svg class="door2">viewBox="0 0 100 100" >
 				<path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
 				</path>
-				<path onclick="go_build2()" class="dor" id="door2" stroke="#606060" stroke-width="1" fill="#606060"
+				<path onclick="go_build2()" class="dor" id="doo2" stroke="#606060" stroke-width="1" fill="#606060"
 					d="M31.5 90 H31.5 V50 Q31.5 21.5, 50 21.5 Q68.5 21.5, 68.5 50 V68.5 90 68.5 89.5 H31 68.5 ">
 				</path>
 			  </svg>
@@ -172,7 +172,7 @@
 			  <svg class="door3">viewBox="0 0 100 100" >
 				<path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
 				</path>
-				<path  onclick="go_build3()" class="dor" stroke="#606060" stroke-width="1" fill="#606060"
+				<path  onclick="go_build3()" class="dor" id="doo3" stroke="#606060" stroke-width="1" fill="#606060"
 					d="M31.5 90 H31.5 V50 Q31.5 21.5, 50 21.5 Q68.5 21.5, 68.5 50 V68.5 90 68.5 89.5 H31 68.5 ">
 				</path>
 			  </svg>
@@ -190,7 +190,7 @@
 			  <svg class="door5">viewBox="0 0 100 100" >
 				<path stroke="#aaaaaa" stroke-width="3" fill="none" d="M30 90 H30 V50 Q30 20, 50 20 Q70 20, 70 50 V70 90">
 				</path>
-				<path  onclick="go_build4()" class="dor" stroke="#606060" stroke-width="1" fill="#606060"
+				<path  onclick="go_build4()" class="dor" id="doo4" stroke="#606060" stroke-width="1" fill="#606060"
 					d="M31.5 90 H31.5 V50 Q31.5 21.5, 50 21.5 Q68.5 21.5, 68.5 50 V68.5 90 68.5 89.5 H31 68.5 ">
 				</path>
 			  </svg>
@@ -295,7 +295,20 @@
 			window.location.href ="build1.html?" + num
 		}
 	}
-	
+	function checkDoor1(){
+		var link = window.location.href
+		var MyArry = link.split("?")
+		var num = MyArry[1]
+		var Checknums = num.split("1")
+		var door1 = document.querySelector("#doo")
+		if(Checknums.length != 2){
+			door1.classList.add("open")
+			console.log("Ok")
+		}
+		console.log("not")
+	}
+	checkDoor1()
+
 	function go_build2(){
 		var link2 = window.location.href
 		var MyArry2 = link2.split("?")
@@ -309,6 +322,20 @@
 		}
 	}
 	
+	function checkDoor2(){
+		var link = window.location.href
+		var MyArry = link.split("?")
+		var num = MyArry[1]
+		var Checknums = num.split("2")
+		var door1 = document.querySelector("#doo2")
+		if(Checknums.length != 2){
+			door1.classList.add("open")
+			console.log("Ok")
+		}
+		console.log("not")
+	}
+	checkDoor2()
+
 	function go_build3(){
 		var link3 = window.location.href
 		var MyArry3 = link3.split("?")
@@ -322,6 +349,19 @@
 		}
 	}
 
+	function checkDoor3(){
+		var link = window.location.href
+		var MyArry = link.split("?")
+		var num = MyArry[1]
+		var Checknums = num.split("3")
+		var door1 = document.querySelector("#doo3")
+		if(Checknums.length != 2){
+			door1.classList.add("open")
+			console.log("Ok")
+		}
+		console.log("not")
+	}
+	checkDoor3()
 	
 	function go_build4(){
 		var link4 = window.location.href
@@ -335,6 +375,20 @@
 			window.location.href ="build4.html?" + num4
 		}
 	}
+
+	function checkDoor4(){
+		var link = window.location.href
+		var MyArry = link.split("?")
+		var num = MyArry[1]
+		var Checknums = num.split("4")
+		var door1 = document.querySelector("#doo4")
+		if(Checknums.length != 2){
+			door1.classList.add("open")
+			console.log("Ok")
+		}
+		console.log("not")
+	}
+	checkDoor4()
 
 	function go_build5(){
 		window.location.href ="lastpage.html";

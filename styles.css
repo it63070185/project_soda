@@ -315,7 +315,7 @@ model-viewer {
 
   }
 .open{
-	fill:white;
+	fill:rgb(248, 248, 149);
 }
 .desk{
 	visibility: visible;

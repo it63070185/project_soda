@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="preloader"><div class="lds-facebook"><div></div><div></div><div></div></div></div>
     <div>
         <button onclick="skip_all()" id="skip"><img src="image/skip.png" alt=""> </button>
         <button id="page_2" onclick="change_line1()">
@@ -139,6 +140,14 @@
 		cursor.classList = "";
 	  }
 	};
+    var loader = document.getElementById("preloader");
+	
+	window.addEventListener("load", function(){
+		setTimeout(function(){
+			loader.classList.add("preloader-hidden")	
+		}, 2500)
+		
+	})
 
 	document.addEventListener("mousemove", onMouseMove);
 	const page_2 = document.getElementById("page_2")
